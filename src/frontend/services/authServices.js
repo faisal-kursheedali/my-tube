@@ -10,12 +10,15 @@ export const signupUser=async (authState,authDispatch,navFnc)=>{
         type:AUTH_LOADING_TRUE
     })
     try {
-        const {data}=await axios.post("/api/auth/signup",{
+        const value={
             email:authState.email,
             password:authState.password,
-            name:authState.name
-        })
-        console.log(data);
+            name:authState.name  
+        }
+        console.log(value);
+        const res=await axios.post(`/api/auth/signup`, value)
+        const {data}=res;
+        console.log(res);
         setLocalStorage("token",data.encodedToken);
         authDispatch({
             type:USER_TOKEN,

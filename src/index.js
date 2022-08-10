@@ -7,7 +7,6 @@ import AuthProvider from "./frontend/context/authContext";
 import ActionProvider from "./frontend/context/actionContext";
 import DataProvider from "./frontend/context/dataContext";
 
-// Call make Server
 makeServer();
 
 
