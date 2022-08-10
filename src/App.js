@@ -25,7 +25,7 @@ function App() {
       getHistory();
       getWatchlater();
     }
-  }, []);
+  }, [token]);
   return (
     <div className="App">
       <PgRoute/>

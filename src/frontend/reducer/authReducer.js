@@ -16,12 +16,7 @@ const AuthReducer=(state,action)=>{
                 name:action.payload
             }
         }
-        case USER_PASSWORD:{
-            return state={
-                ...state,
-                password:action.payload
-            }
-        }
+        
         case USER_PASSWORD:{
             return state={
                 ...state,

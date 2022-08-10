@@ -1,11 +1,11 @@
 import React from 'react'
 import { useAuth } from '../context/authContext'
 import {  signupUser } from '../services/authServices'
-import { useNavigate,useLocation } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import { USER_EMAIL, USER_NAME, USER_PASSWORD } from '../constant/authConstant';
 
 const Signup = () => {
-  const location=useLocation();
+  // const location=useLocation();
   const navigate=useNavigate();
   const{authState,authDispatch}=useAuth();
   const navigateFnc=()=>{

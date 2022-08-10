@@ -1,6 +1,6 @@
 import axios from "axios";
-import { AUTH_ERROR, AUTH_LOADING, AUTH_LOADING_FALSE, AUTH_LOADING_TRUE, USER_TOKEN } from "../constant/authConstant";
-import { useAuth } from "../context/authContext";
+import { AUTH_ERROR, AUTH_LOADING_FALSE, AUTH_LOADING_TRUE, USER_TOKEN } from "../constant/authConstant";
+// import { useAuth } from "../context/authContext";
 import { setLocalStorage } from "../utility/localStorage";
 
 
