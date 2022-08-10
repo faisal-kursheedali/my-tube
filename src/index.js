@@ -3,13 +3,23 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { makeServer } from "./server";
+import AuthProvider from "./frontend/context/authContext";
+import ActionProvider from "./frontend/context/actionContext";
+import DataProvider from "./frontend/context/dataContext";
 
 // Call make Server
 makeServer();
 
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AuthProvider>
+    <DataProvider>
+      <ActionProvider>
+        <App />
+    </ActionProvider>
+    </DataProvider>
+    </AuthProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
