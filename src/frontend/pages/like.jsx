@@ -11,7 +11,7 @@ const Like = () => {
   useEffect(() => {
     getLikedVdo(token,actionDispatch);
     console.log(actionState.likedVdoData);
-  }, []);
+  });
   return (
     <>
     <div className="like-vdo-container">
