@@ -27,7 +27,7 @@ const DataProvider=({children})=>{
             }
         }
         getAllCatagory();
-    },[])
+})
     return(
         <dataContext.Provider value={{vdoList,catagory,selectedVdo,setSelectedVdo}}>
             {children}

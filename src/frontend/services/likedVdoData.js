@@ -11,7 +11,8 @@ export const getLikedVdo= async(token,actionDispatch)=>{
             headers:{
                 authorization: token,
             },
-        })
+        });
+        console.log(data);
         actionDispatch({
             type:LIKED_DATA,
             payload:data.likes
@@ -21,9 +22,9 @@ export const getLikedVdo= async(token,actionDispatch)=>{
         console.log(error.message);
     }
 }
-export const addLikedVdo= async(token,actionDispatch,id)=>{
+export const addLikedVdo= async(token,actionDispatch,video)=>{
     try {
-        const {data}= await axios.post(`/api/user/likes/${id}`,{
+        const {data}= await axios.post(`/api/user/likes`,{video},{
             headers:{
                 authorization: token,
             },

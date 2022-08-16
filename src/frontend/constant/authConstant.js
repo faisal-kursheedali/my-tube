@@ -10,3 +10,4 @@ export const AUTH_ERROR="AUTH_ERROR";
 export const LOGOUT_USER="LOGOUT_USER";
 export const SET_STATUS_TRUE="SET_STATUS_TRUE";
 export const SET_STATUS_FALSE="SET_STATUS_FALSE";
+export const   LOAD_AUTH="LOAD_AUTH";

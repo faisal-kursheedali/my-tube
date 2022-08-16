@@ -1,0 +1,114 @@
+.video-section-dec-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+
+}
+.video-section-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.video-section-views{
+    margin-top: 12px;
+    font-size: .9rem;
+    font-weight: 600;
+}
+.video-section-desc{
+    font-size: .85rem;
+    font-weight:300;
+    margin-top: 4px;
+}
+.video-section-btn-list{
+    padding-left: 0px;
+    list-style: none;
+    display: flex;
+}
+.video-section-btn-item{
+    font-size: 1rem;
+    display: flex;
+    align-items:center;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.video-section-btn-item-icn{
+    padding: 6px ;
+}
+
+.video-section-btn-item-txt{
+    padding-right: 6px;
+
+}
+.video-section-channel{
+    display: flex;
+    align-items: flex-start;
+    margin: 12px 12px 0px 0px;
+    padding:6px;
+    padding-left: 12px;
+    border: 1px solid lightgray;
+}
+.video-section-channe-snippet{
+    display: flex;
+    cursor: pointer;
+}
+.video-section-channel-desc{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+.video-section-channel-name{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.video-section-channel-sub-count{
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 4px;
+    color: gray;
+}
+.video-section-channel-sub{
+    margin-left: auto;
+}
+.video-section-channel-sub-btn,.video-section-channel-unsub-btn{
+    outline: none;
+    border: 0px;
+    margin: 0px 4px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.video-section-channel-sub-btn{
+    background-color: red;
+    color: azure;
+}
+.video-section-channe-img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+.video-section-channel-unsub-btn{
+    background-color: lightgrey;
+    color: gray;
+}
+.video-section-desc-more{
+    font-weight: 600;
+    display: inline;
+    cursor: pointer;
+}
+.unsub-container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    /* width: 100vw;
+    height: 100vh; */
+    background-color: rgba(36, 35, 35, 0.186);
+}
+.unsub-box{
+    max-width:600px;
+    margin: auto;
+    height: auto;
+    background-color: rgb(37, 36, 36);
+    color: white;
+
+}

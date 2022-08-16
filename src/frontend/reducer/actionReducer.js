@@ -1,4 +1,4 @@
-import { CLEAR_DATA, HISTORY_DATA, LIKED_DATA, WATCHLATER_DATA } from "../constant/actionConstant";
+import { CLEAR_DATA, HISTORY_DATA, LIKED_DATA, PLAYLIST_DATA, SINGLE_PLAYLIST, WATCHLATER_DATA } from "../constant/actionConstant";
 import { actionInitialState } from "../context/actionContext";
 
 const ActionReducer=(state,action)=>{
@@ -19,6 +19,18 @@ const ActionReducer=(state,action)=>{
             return state={
                 ...state,
                 watchlaterData:action.payload
+            }
+        }
+        case PLAYLIST_DATA:{
+            return state={
+                ...state,
+                playlistData:action.payload
+            }
+        }
+        case SINGLE_PLAYLIST:{
+            return state={
+                ...state,
+                playlistData:state.playlistData.map(i=>i._id===action.payload._id?action.payload:i)
             }
         }
         case CLEAR_DATA:{

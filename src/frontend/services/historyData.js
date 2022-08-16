@@ -22,19 +22,19 @@ export const getHistory= async(token,actionDispatch)=>{
         console.log(error.message);
     }
 }
-export const addHistory= async(token,actionDispatch,vdo)=>{
+export const addHistory= async(token,actionDispatch,video)=>{
     try {
-        const {data}= await axios.post(`/api/user/history`,{vdo},{
-            headers:{
-                authorization: token,
+        const response = await axios.post(
+          "/api/user/history",
+          { video },
+          {
+            headers: {
+              authorization: token,
             },
-        })
-        actionDispatch({
-            type:HISTORY_DATA,
-            payload:data.history
-        });
-        
-    } catch (error) {
+          }
+        );
+        actionDispatch({ type: HISTORY_DATA, payload: response.data.history });
+      }catch (error) {
         console.log(error.message);
     }
 }

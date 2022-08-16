@@ -1,0 +1,59 @@
+.vdo-card-container,.vdo-link{
+   width: 270px;
+    margin: .5rem;
+    cursor: pointer;
+    color: inherit;
+}
+.vdo-thumbnail{
+    width:100%;
+    height: 151.88px;
+    position: relative;
+}
+.vdo-thumbnail-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow:unset;
+}
+.vdo-duration{
+    position: absolute;
+    bottom: .3rem;
+    right: .3rem;
+    padding: .2rem;
+    /* background-color: #524e4eec; */
+    background-color: gray;
+    border-radius: 5px;
+}
+.vdo-channel{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.vdo-channel-image{
+    margin-top: 10px;
+    width: 36px;
+}
+.vdo-channel-name{
+    letter-spacing: .2px;
+    font-weight: 400;
+    margin-left: 1ch;
+}
+.vdo-detail{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: inherit;
+    margin-top: 5px;
+    word-spacing: .2ch;
+}
+.vdo-date{
+    margin-left: .5ch;
+}
+.vdo-title{
+    color: inherit;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

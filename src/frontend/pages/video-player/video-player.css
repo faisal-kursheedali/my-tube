@@ -1,0 +1,40 @@
+.video-player-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    /* overflow-y: scroll; */
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.vedio-player{
+    width: 60%;
+    padding: 24px 24px 0px 0px;
+    margin-left: 24px;
+    
+}
+.vedio-releated{
+    width: 40%;
+    padding: 24px 24px 0px 0px;
+}
+
+@media (max-width: 1020px) {
+    .video-player-container{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:center;
+        box-sizing: border-box;
+        padding: 12px 12px 0px 12px;
+    }
+    .vedio-player{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .vedio-releated{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        margin-top: 24px;
+    }
+}

@@ -1,51 +1,40 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #22201c;
-  min-height: 100vh;
+.main-content{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
+  height: 90vh;
+  position: relative;
 }
-
-.App-link {
-  color: #61dafb;
+.nav-container-space{
+  width: 100%;
+  border-bottom: 1px solid gray;
 }
-
-.brand-title {
-  font-size: 3rem;
-  color: #d9d9d9;
+.side-nav-container{
+  width: auto;
+  /* background-color: lightgray; */
+  height: 100%;
+  margin-left: .5rem;
 }
-
-.brand-title span {
-  color: #ffde59;
+.side-mainpg-container{
+  overflow-y: scroll;
+  width: 100%;
 }
-
-.brand-description {
-  font-size: 1.4rem;
+body{
+  /* background-color: #f9f9f9; */
+  /* background-color: black; */
+  /* color: white; */
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
-
-.links {
-  display: flex;
+.App{
+  /* display: flex; */
+  /* overflow-y: scroll; */
 }
-
-.links a {
-  color: #d9d9d9;
-  font-size: 1.2rem;
-  margin: 1rem;
+.side-nav-menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 15%;
+  min-width: 200px;
+  z-index: 5;
+  background-color: inherit;
 }

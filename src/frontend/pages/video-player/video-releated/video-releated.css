@@ -1,0 +1,19 @@
+.video-releated-list{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    list-style: none;
+}
+.vdo-releated-img-container{
+    
+}
+
+@media (max-width:700px) {
+    .video-releated-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .video-releated-list-item{
+        height: 94px;
+    }
+}

@@ -1,0 +1,36 @@
+.login-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:gray;
+    padding: 2rem;
+    border-radius: .5rem;
+    
+    
+}
+.login-image{
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 150px;
+    object-fit: contain;
+}
+.login-btn{
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.login-txt{
+    margin-top: 1rem;
+}
+
+.login{
+    margin-top: 2rem;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-txt-head{
+    font-size: 1.2rem;
+    font-weight: 600;
+}

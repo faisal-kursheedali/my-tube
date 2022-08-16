@@ -1,0 +1,14 @@
+.video-list{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    /* justify-content: flex-start; */
+    /* justify-content: space-between; */
+}
+@media (max-width:750px) {
+    .video-list{
+        justify-content: center;
+    }
+    
+}

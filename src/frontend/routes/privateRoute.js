@@ -6,11 +6,11 @@ import {useLocation, Navigate} from "react-router-dom"
 const PrivateRoute = ({children}) => {
     const {authState}=useAuth()
     const location=useLocation();
-    const {status}=authState;
+    const {token}=authState;
   return (
     <>
     {
-        status?(<Navigate to={"/"} state={{from:location}} replace/>):(children)
+        token?(<Navigate to={"/"} state={{from:location}} replace/>):(children)
     }
     </>
   )

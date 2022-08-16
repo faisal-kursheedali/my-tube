@@ -1,4 +1,4 @@
-import { AUTH_ERROR, AUTH_LOADING_FALSE, AUTH_LOADING_TRUE, IS_LOGGEDIN, LOGOUT_USER, SET_STATUS_TRUE,SET_STATUS_FALSE, USER_CONFIRMPASSWORD, USER_EMAIL, USER_NAME, USER_PASSWORD, USER_TOKEN } from "../constant/authConstant";
+import { AUTH_ERROR, AUTH_LOADING_FALSE, AUTH_LOADING_TRUE, IS_LOGGEDIN, LOGOUT_USER, SET_STATUS_TRUE,SET_STATUS_FALSE, USER_CONFIRMPASSWORD, USER_EMAIL, USER_NAME, USER_PASSWORD, USER_TOKEN, LOAD_AUTH } from "../constant/authConstant";
 import { authInitialState } from "../context/authContext";
 
 const AuthReducer=(state,action)=>{
@@ -11,9 +11,22 @@ const AuthReducer=(state,action)=>{
             }
         }
         case USER_NAME:{
+           
+                return state={
+                    ...state,
+                    name:action.payload
+                } 
+            
+            
+        }
+        case LOAD_AUTH:{
+            const token=localStorage.getItem("token");
+            const userName=localStorage.getItem("userName");
+            console.log(token);
             return state={
                 ...state,
-                name:action.payload
+                token:token,
+                name:userName
             }
         }
         
@@ -32,7 +45,9 @@ const AuthReducer=(state,action)=>{
         case USER_TOKEN:{
             return state={
                 ...state,
-                token:action.payload
+                token:action.payload.token,
+                name:action.payload.name,
+                email:action.payload.email
             }
         }
         case AUTH_ERROR:{
@@ -60,6 +75,7 @@ const AuthReducer=(state,action)=>{
             }
         }
         case LOGOUT_USER:{
+            localStorage.removeItem("token");
             return state=authInitialState;
         }
         case SET_STATUS_TRUE:{

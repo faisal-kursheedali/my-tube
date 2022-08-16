@@ -7,6 +7,7 @@ import { WATCHLATER_DATA } from "../constant/actionConstant";
 // const {token}=authState;
 
 export const getWatchlater= async(token,actionDispatch)=>{
+    
     try {
         const {data}= await axios.get("/api/user/watchlater",{
             headers:{
@@ -22,9 +23,9 @@ export const getWatchlater= async(token,actionDispatch)=>{
         console.log(error.message);
     }
 }
-export const addWatchlater= async(token,actionDispatch,vdo)=>{
+export const addWatchlater= async(token,actionDispatch,video)=>{
     try {
-        const {data}= await axios.post(`/api/user/watchlater`,{vdo},{
+        const {data}= await axios.post(`/api/user/watchlater`,{video},{
             headers:{
                 authorization: token,
             },

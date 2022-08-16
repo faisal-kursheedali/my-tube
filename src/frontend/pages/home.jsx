@@ -1,9 +1,14 @@
 import React from 'react'
+import { VideoListing } from '../components/import';
+import { useData } from '../context/dataContext'
+
 
 const Home = () => {
+  const {vdoList}=useData();
+  console.log(vdoList);
   return (
    <>
-   home
+   <VideoListing data={vdoList}/>
    </>
 
   )
