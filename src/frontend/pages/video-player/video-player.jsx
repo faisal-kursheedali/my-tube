@@ -98,7 +98,7 @@ const VideoPLayer = () => {
   // const [render,setRender]=useState(false);
   useEffect(()=>{
     addHistory(token,actionDispatch,vdoData);
-  })
+  },[])
   // if(vdoData!=={}){
   //   console.log(vdoData);
   //   setRender(true)

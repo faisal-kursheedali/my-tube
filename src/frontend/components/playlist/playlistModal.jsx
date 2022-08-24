@@ -9,7 +9,7 @@ const PlaylistModal = ({video}) => {
     useEffect(()=>{
         getPlaylistData(token,actionDispatch);
         console.log(playlistData);
-    })
+    },[])
     // useEffect(()=>{
     //     getPlaylistData(token,actionDispatch);
     // },[playlistData])

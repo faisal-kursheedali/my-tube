@@ -10,7 +10,7 @@ const History = () => {
     useEffect(()=>{
         getHistory(token,actionDispatch);
         console.log(actionState.historyData);
-    })
+    },[])
   return (
     <div className="history-container">
             <VideoListing data={actionState.historyData}/>

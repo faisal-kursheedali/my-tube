@@ -8,7 +8,7 @@ import { useData } from '../context/dataContext';
 const Search = () => {
     useEffect(()=>{
         filterDispatch({type:CLEAR_SEARCH})
-    })
+    },[])
     const{filterState,filterDispatch}=useAction();
     const {vdoList}=useData();
     console.log(filterState.search);

@@ -12,7 +12,7 @@ const Watchlater = () => {
   useEffect(()=>{
     getWatchlater(token,actionDispatch);
     console.log(actionState.watchlaterData);
-  })
+  },[])
   return (
     <div className="watch-later-container">
       <VideoListing data={actionState.watchlaterData}/>

@@ -39,7 +39,7 @@ function App() {
     authDispatch({
       type:LOAD_AUTH
     })
-  })
+  },[])
   return (
     <div className="App">
       <Router>
