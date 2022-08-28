@@ -20,7 +20,7 @@ export const getWatchlater= async(token,actionDispatch)=>{
         });
         
     } catch (error) {
-        console.log(error.message);
+        // console.log(error.message);
     }
 }
 export const addWatchlater= async(token,actionDispatch,video)=>{
@@ -36,7 +36,7 @@ export const addWatchlater= async(token,actionDispatch,video)=>{
         });
         
     } catch (error) {
-        console.log(error.message);
+        // console.log(error.message);
     }
 }
 export const removeWatchlater= async(token,actionDispatch,id)=>{
@@ -52,6 +52,6 @@ export const removeWatchlater= async(token,actionDispatch,id)=>{
         });
         
     } catch (error) {
-        console.log(error.message);
+        // console.log(error.message);
     }
 }

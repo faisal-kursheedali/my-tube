@@ -1,0 +1,54 @@
+.playlist-modal-container{
+    position: relative;
+    padding: 1rem;
+    color: black;
+    background-color: rgb(161, 161, 161);
+}
+.playlist-modal-close{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    color: black;
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+.playlist-modal-display{
+    position: fixed;
+    top: 50%;
+    left: 40%;
+}
+.playlist-input-title,.playlist-input-description{
+    display: block;
+    border: 0px;
+    outline: 0px;
+    background-color: inherit;
+    margin-top: 4px;
+    border-bottom: 1px solid;
+}
+.playlist-btn{
+    margin-top:6px;
+    cursor: pointer;
+    padding: 3px 6px ;
+    background-color:rgb(235, 234, 234);
+    border: 0px;
+    outline: 0px;
+}
+.playlist-modal-list{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    margin-top: 6px;
+    margin-left: 6px;
+}
+.playlist-modal-list-item-label{
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.playlist-modal-head{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.playlist-modal-default-display{
+    font-weight: 300;
+}

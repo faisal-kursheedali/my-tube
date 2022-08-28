@@ -1,7 +1,7 @@
 import { createContext,useContext,useReducer,useState } from "react";
 import ActionReducer from "../reducer/actionReducer";
 import filterReducer from "../reducer/filterReducer";
-import { getLocalStorage } from "../utility/localStorage";
+// import { localStorage.getItem } from "../utility/localStorage";
 
 export const actionInitialState={
     likedVdoData:[],
@@ -17,7 +17,7 @@ const ActionProvider=({children})=>{
     })
     const[actionState,actionDispatch]=useReducer(ActionReducer,actionInitialState)
     const [sideNav,setSideNav]=useState(false);
-    const mode=getLocalStorage("darkmode")
+    const mode=localStorage.getItem("darkmode");
     const [darkMode,setDarkMode]=useState(mode);
     const [modal,setModal]=useState(false);
     return(

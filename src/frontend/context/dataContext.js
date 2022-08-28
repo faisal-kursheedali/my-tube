@@ -13,7 +13,7 @@ const DataProvider=({children})=>{
                 const {data}=await axios.get("/api/videos");
                 setVdoList(prev=>prev=data.videos);
             } catch (error) {
-                console.log(error);
+                // console.log(error);
             }   
         };
         getAllVdo();
@@ -23,7 +23,7 @@ const DataProvider=({children})=>{
                 const {data}=await axios.get("/api/categories");
                 setCatagory(prev=>prev=data.categories);
             } catch (error) {
-                console.log(error.message);
+                // console.log(error.message);
             }
         }
         getAllCatagory();

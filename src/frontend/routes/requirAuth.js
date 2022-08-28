@@ -6,7 +6,7 @@ import {Navigate,useLocation} from "react-router-dom"
 const RequirAuth = ({children}) => {
     const {authState}=useAuth();
     const {token}=authState;
-    console.log(token);
+    // console.log(token);
     const location=useLocation();
   return (
     <>

@@ -8,13 +8,13 @@ export const getPlaylist=async (token,actionDispatch)=>{
                 authorization: token,
             }
         })
-        console.log(data);
+        // console.log(data);
         actionDispatch({
             type:PLAYLIST_DATA,
             payload:data.playlists
         })  
     } catch (error) {
-        console.log(error.message);
+        // console.log(error.message);
     }
     
 }
@@ -27,13 +27,13 @@ export const createPlaylist=async (token,actionDispatch,newPlaylist)=>{
                 authorization: token,
             }
         })
-        console.log(data);
+        // console.log(data);
         actionDispatch({
             type:PLAYLIST_DATA,
             payload:data.playlists
         })  
     } catch (error) {
-        console.log(error.message);
+        // console.log(error.message);
     }
     
 }
@@ -49,7 +49,7 @@ export const deletePlaylist=async (token,actionDispatch,playlistID)=>{
             payload:data.playlists
         })  
     } catch (error) {
-        console.log(error.message);
+        // console.log(error.message);
     }
     
 }
@@ -82,7 +82,7 @@ export const addVdoToPlaylist=async(token,actionDispatch,playlistID,video)=>{
         });
     }
     catch(error){
-        console.log(error.message);
+        // console.log(error.message);
     }
 }
 
@@ -102,6 +102,6 @@ export const delVdoFromPlaylist=async(token,actionDispatch,playlistID,videoID)=>
         });
     }
     catch(error){
-        console.log(error.message);
+        // console.log(error.message);
     }
 }

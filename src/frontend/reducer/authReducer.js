@@ -1,5 +1,6 @@
 import { AUTH_ERROR, AUTH_LOADING_FALSE, AUTH_LOADING_TRUE, IS_LOGGEDIN, LOGOUT_USER, SET_STATUS_TRUE,SET_STATUS_FALSE, USER_CONFIRMPASSWORD, USER_EMAIL, USER_NAME, USER_PASSWORD, USER_TOKEN, LOAD_AUTH } from "../constant/authConstant";
 import { authInitialState } from "../context/authContext";
+// import { localStorage.getItem } from "../utility/localStorage";
 
 const AuthReducer=(state,action)=>{
     switch (action.type) {
@@ -20,13 +21,11 @@ const AuthReducer=(state,action)=>{
             
         }
         case LOAD_AUTH:{
-            const token=localStorage.getItem("token");
-            const userName=localStorage.getItem("userName");
-            console.log(token);
             return state={
                 ...state,
-                token:token,
-                name:userName
+                token:localStorage.getItem("token"),
+                name:localStorage.getItem("userName"),
+                email:localStorage.getItem("userMail")
             }
         }
         
@@ -76,6 +75,9 @@ const AuthReducer=(state,action)=>{
         }
         case LOGOUT_USER:{
             localStorage.removeItem("token");
+            localStorage.removeItem("userName");
+            localStorage.removeItem("userMail");
+            localStorage.removeItem("darkmode");
             return state=authInitialState;
         }
         case SET_STATUS_TRUE:{

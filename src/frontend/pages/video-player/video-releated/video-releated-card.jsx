@@ -6,7 +6,7 @@ import "./video-releated-card.css"
 
 const VideoReleatedCard = ({data}) => {
   const [hover,setHover]=useState(false)
-  console.log(data);
+  // console.log(data);
   return (
     <>
     <Link state={

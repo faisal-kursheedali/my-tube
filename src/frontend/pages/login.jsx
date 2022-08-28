@@ -16,7 +16,7 @@ const Login = () => {
   }
   return (
     <>
-    {
+    {/* {
       !click?
       <div className="login-container">
       <div className="login">
@@ -28,7 +28,7 @@ const Login = () => {
       </div>
       </div>
       </div>:""
-    }
+    } */}
     
     {
       click?(<>

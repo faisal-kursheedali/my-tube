@@ -9,8 +9,8 @@ const History = () => {
   const {token}=authState;
     useEffect(()=>{
         getHistory(token,actionDispatch);
-        console.log(actionState.historyData);
-    },[])
+        // console.log(actionState.historyData);
+    },[token,actionDispatch])
   return (
     <div className="history-container">
             <VideoListing data={actionState.historyData}/>

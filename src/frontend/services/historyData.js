@@ -19,10 +19,11 @@ export const getHistory= async(token,actionDispatch)=>{
         });
         
     } catch (error) {
-        console.log(error.message);
+        // console.log(error.message);
     }
 }
 export const addHistory= async(token,actionDispatch,video)=>{
+    // console.log(token);
     try {
         const response = await axios.post(
           "/api/user/history",
@@ -35,7 +36,7 @@ export const addHistory= async(token,actionDispatch,video)=>{
         );
         actionDispatch({ type: HISTORY_DATA, payload: response.data.history });
       }catch (error) {
-        console.log(error.message);
+        // console.log(error.message);
     }
 }
 export const removeHistory= async(token,actionDispatch,id)=>{
@@ -51,6 +52,6 @@ export const removeHistory= async(token,actionDispatch,id)=>{
         });
         
     } catch (error) {
-        console.log(error.message);
+        // console.log(error.message);
     }
 }

@@ -26,7 +26,7 @@ const VideoReleated = ({ data }) => {
                 {
 
                     data.map(i => {
-                        console.log(i);
+                        // console.log(i);
                         return (
                             <li className="video-releated-list-item" key={i._id}>
                                 <VideoReleatedCard data={i} />

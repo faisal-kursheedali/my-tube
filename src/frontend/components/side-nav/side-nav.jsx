@@ -42,7 +42,7 @@ const SideNav = () => {
             <span className="nav-item-txt">History</span></Link>
                 </li>
                 {
-                    console.log(token)
+                    // console.log(token)
                 }
                 {
                   token?(<li className="side-nav-item side-nav-last-item" onClick={()=>{

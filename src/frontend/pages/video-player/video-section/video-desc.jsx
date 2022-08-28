@@ -2,11 +2,12 @@ import React, { useState } from 'react'
 import "./video-desc.css"
 import { BiLike, BiDislike } from "react-icons/bi"
 import { RiPlayListAddLine } from "react-icons/ri"
-import { MdOutlineWatchLater } from "react-icons/md"
+import { AiFillLike } from "react-icons/ai"
+import { MdOutlineWatchLater,MdWatchLater } from "react-icons/md"
 import { useAuth } from '../../../context/authContext'
 import { useAction } from '../../../context/actionContext'
 import { addLikedVdo, removeLikedVdo } from '../../../services/likedVdoData'
-import { addWatchlater } from '../../../services/watchlaterData'
+import { addWatchlater, removeWatchlater } from '../../../services/watchlaterData'
 // import PlaylistModal from '../../../components/playlist/playlistModal'
 // import viewFnc from '../../../component/function/view'
 // import { getChannel } from '../../../api'
@@ -14,9 +15,10 @@ import { addWatchlater } from '../../../services/watchlaterData'
 // import FetchVedio from '../../../fetch'
 
 const VideoDesc = ({ data }) => {
-    console.log(data);
+    // console.log(data);
     const {authState}=useAuth();
-    const {actionDispatch,setModal}=useAction();
+    const {actionDispatch,setModal,actionState}=useAction();
+    const {watchlaterData,likedVdoData}=actionState;
     const {token}=authState;
     // const like = viewFnc(data.statistics.likeCount);
     // const state = useSelector(state => state.dataFetch);
@@ -40,16 +42,7 @@ const VideoDesc = ({ data }) => {
 
     return (
         <>
-        {/* {
-            modal?(
-                <>
-                <div className="playlist-modal-container">
-
-                <PlaylistModal video={data}/>
-                </div>
-                </>
-            ):""
-        } */}
+        
             <div className="video-section-dec-container">
                 <div className="video-section-title">
                     {data.contentDetail.title}
@@ -78,19 +71,55 @@ const VideoDesc = ({ data }) => {
                 </div>
                 <div className="video-section-btn">
                     <ul className="video-section-btn-list">
-                        <li className="video-section-btn-item"> <BiLike className="video-section-btn-item-icn" /> <div className="video-section-btn-item-txt" onClick={()=>{
-                            addLikedVdo(token,actionDispatch,data);
-                        }}> like</div></li>
-                        <li className="video-section-btn-item"><BiDislike className="video-section-btn-item-icn" onClick={()=>{
+                        <li className="video-section-btn-item"> {data.contentDetail.likeCount} 
+                        {
+                            likedVdoData.some(i=>i._id===data._id)?(
+                                <>
+                                <AiFillLike className="video-section-btn-item-icn" onClick={()=>{
+                                    removeLikedVdo(token,actionDispatch,data._id);
+                                }} />like
+                                </>
+                            ):(<>
+                                <BiLike className="video-section-btn-item-icn" /> <div className="video-section-btn-item-txt" onClick={()=>{
+                                    console.log();
+                                    addLikedVdo(token,actionDispatch,data);
+                                }}> like</div>
+                            </>)
+                        }
+                        
+                        </li>
+                        <li className="video-section-btn-item">
+                            <BiDislike className="video-section-btn-item-icn" onClick={()=>{
                             removeLikedVdo(token,actionDispatch,data._id);
-                        }} /> <div className="video-section-btn-item-txt"> dislike</div></li>
-                        <li className="video-section-btn-item"><MdOutlineWatchLater className="video-section-btn-item-icn" onClick={()=>{
-                            addWatchlater(token,actionDispatch,data);
-                        }} /> <div className="video-section-btn-item-txt"> watch later</div></li>
+                        }} /> <div className="video-section-btn-item-txt"> dislike</div>
+                        </li>
+                        <li className="video-section-btn-item">
+                            {
+                                watchlaterData.some(i=>i._id === data._id)?(
+                                    <>
+                                    <MdWatchLater className="video-section-btn-item-icn" onClick={()=>{
+                                        console.log(" removed watchlater");
+                                        removeWatchlater(token,actionDispatch,data._id);
+                                    }} /> <div className="video-section-btn-item-txt"> watch later</div>
+                                    </>
+                                ):(
+                                    <>
+                                    <MdOutlineWatchLater className="video-section-btn-item-icn" onClick={()=>{
+                                        console.log(watchlaterData);
+                                        console.log(data);
+                                    addWatchlater(token,actionDispatch,data);
+                        }} /> <div className="video-section-btn-item-txt"> watch later</div>
+                                    </>
+                                )
+                            }
+                            
+                        </li>
                         <li className="video-section-btn-item" onClick={()=>{
-                            setModal(true)
+                            setModal(prev=>prev=!prev);
                         }}><RiPlayListAddLine className="video-section-btn-item-icn" /> <div className="video-section-btn-item-txt"> save</div></li>
-                        {/* <li className="video-section-btn-item"></li> */}
+                        {/* <li className="video-section-btn-item">
+                            <PlaylistModal/>
+                        </li> */}
                     </ul>
                 </div>
                 <div className="video-section-channel">

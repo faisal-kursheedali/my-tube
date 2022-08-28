@@ -5,7 +5,7 @@ import { useData } from '../context/dataContext'
 
 const Home = () => {
   const {vdoList}=useData();
-  console.log(vdoList);
+  // console.log(vdoList);
   return (
    <>
    <VideoListing data={vdoList}/>

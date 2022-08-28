@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 // import {viewFnc,durationFnc}from "../../components/function/import"
 const VedioCard = ({value}) => {
   // const [vdoClick, setVdoClick] = useState(false);
-  console.log(value);
+  // console.log(value);
   const [hover,setHover]=useState(false);
 
   

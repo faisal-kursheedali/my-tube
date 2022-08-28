@@ -1,7 +1,7 @@
 import axios from "axios";
 import { AUTH_ERROR, AUTH_LOADING_FALSE, AUTH_LOADING_TRUE, USER_TOKEN } from "../constant/authConstant";
 // import { useAuth } from "../context/authContext";
-import { setLocalStorage } from "../utility/localStorage";
+// import { localStorage.setItem } from "../utility/localStorage";
 
 
 
@@ -15,13 +15,13 @@ export const signupUser=async (authState,authDispatch,navFnc)=>{
             password:authState.password,
             name:authState.name  
         }
-        console.log(value);
+        // console.log(value);
         const res=await axios.post(`/api/auth/signup`, value)
         const {data}=res;
-        console.log(data);
-        setLocalStorage("token",data.encodedToken);
-        setLocalStorage("userName",data.createdUser.name);
-        setLocalStorage("userMail",data.createdUser.email);
+        // console.log(data);
+        localStorage.setItem("token",data.encodedToken);
+        localStorage.setItem("userName",data.createdUser.name);
+        localStorage.setItem("userMail",data.createdUser.email);
         authDispatch({
             type:USER_TOKEN,
             payload:{
@@ -35,7 +35,7 @@ export const signupUser=async (authState,authDispatch,navFnc)=>{
         })
         navFnc();
     } catch (error) {
-        console.log(error);
+        // console.log(error);
         authDispatch({
             type:AUTH_ERROR,
             payload:error.message
@@ -56,11 +56,10 @@ export const loginUser=async(authState,authDispatch,navFnc)=>{
             email:authState.email,
             password:authState.password,
         })
-        console.log(data);
-
-        setLocalStorage("token",data.encodedToken);
-        setLocalStorage("userName",data.foundUser.name);
-        setLocalStorage("userEmail",data.foundUser.email);
+        // console.log(data);
+        localStorage.setItem("token",data.encodedToken);
+        localStorage.setItem("userName",data.foundUser.name);
+        localStorage.setItem("userEmail",data.foundUser.email);
         authDispatch({
             type:USER_TOKEN,
             payload:{token:data.encodedToken,name:data.foundUser.name,email:data.foundUser.email}
@@ -70,7 +69,7 @@ export const loginUser=async(authState,authDispatch,navFnc)=>{
         })
         navFnc();
     } catch (error) {
-        console.log(error);
+        // console.log(error);
         authDispatch({
             type:AUTH_ERROR,
             payload:error.message

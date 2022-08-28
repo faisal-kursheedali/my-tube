@@ -9,9 +9,9 @@ const Like = () => {
   const {authState}=useAuth();
   const {token}=authState;
   useEffect(() => {
+    console.log(token);
     getLikedVdo(token,actionDispatch);
-    console.log(actionState.likedVdoData);
-  },[]);
+  },[token,actionDispatch]);
   return (
     <>
     <div className="like-vdo-container">

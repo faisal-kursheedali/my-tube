@@ -1,0 +1,41 @@
+.user-container{
+    display: flex;
+    padding: 2.5rem 4rem;
+    background-color: gray;
+    border-radius: .5rem;
+    width: max-content;
+    flex-grow: unset;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    margin-top: 4rem;
+}
+.user-profile{
+ min-width: 90px;
+ aspect-ratio: 1/1;
+ background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-letter{
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+.user-detail{
+    padding: .5rem;
+
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.user-given-value{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media (max-width:515px) {
+    .user-container{
+        flex-direction: column;
+    }
+}

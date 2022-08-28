@@ -6,7 +6,7 @@ import "./video-listing.css";
 
 
 const VideoListing =  ({data}) => {
-    console.log(data);
+    // console.log(data);
     // const state= useSelector(state=>state.dataFetch);
     // const store=useSelector(state=>state.popularVdo);
     // const[data,setData]=useState(store.data)

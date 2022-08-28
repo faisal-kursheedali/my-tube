@@ -10,7 +10,7 @@ import { useAction } from '../../context/actionContext'
 import { SEARCH } from '../../constant/actionConstant'
 import { useAuth } from '../../context/authContext';
 import { useNavigate } from 'react-router-dom'
-import { setLocalStorage } from '../../utility/localStorage'
+// import { localStorage.setItem } from '../../utility/localStorage'
 const Header = () => {
   const {filterState,filterDispatch,setSideNav,darkMode,setDarkMode}=useAction();
   const navigate=useNavigate();
@@ -41,9 +41,9 @@ const Header = () => {
         
 
 
-        <div class="bui-input-icn-container bui-input-sm nav-search">
-          <input type="text" class="bui-input nav-input" placeholder='search' value={filterState.search} onChange={(e)=>filterDispatch({type:SEARCH,payload:e.target.value})} />
-            <div class="input-icn ">
+        <div className="bui-input-icn-container bui-input-sm nav-search">
+          <input type="text" className="bui-input nav-input" placeholder='search' value={filterState.search} onChange={(e)=>filterDispatch({type:SEARCH,payload:e.target.value})} />
+            <div className="input-icn ">
               <Link to={`/search:${filterState.search}`}><GoSearch/></Link>
             
             </div>
@@ -52,12 +52,12 @@ const Header = () => {
           {
             darkMode?<li className="nav-icon bui-link" onClick={()=>{
               setDarkMode(false)
-              setLocalStorage("darkmode",false);
+              localStorage.setItem("darkmode",false);
             }}>
             <BsFillSunFill style={{color:"gold"}}/>
           </li>:<li className="nav-icon bui-link" onClick={()=>{
             setDarkMode(true)
-            setLocalStorage("darkmode",true);
+            localStorage.setItem("darkmode",true);
           }}>
             <BsFillMoonStarsFill/>
           </li>

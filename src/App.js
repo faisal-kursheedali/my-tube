@@ -2,7 +2,7 @@ import "./App.css";
 import {useEffect} from "react"
 // import { useAuth } from "./frontend/context/authContext";
 // import { SET_STATUS_TRUE, USER_TOKEN } from "./frontend/constant/authConstant";
-// import { getLocalStorage } from "./frontend/utility/localStorage";
+// import { localStorage.getItem } from "./frontend/utility/localStorage";
 // import { getLikedVdo } from "./frontend/services/likedVdoData";
 // import { getHistory } from "./frontend/services/historyData";
 // import { getWatchlater } from "./frontend/services/watchlaterData";
@@ -17,7 +17,7 @@ import { useAction } from "./frontend/context/actionContext";
 
 
 function App() {
-  // const token = getLocalStorage("token");
+  // const token = localStorage.getItem("token");
   // const {authDispatch}=useAuth();
   // useEffect(() => {
   //   if (token) {
@@ -39,7 +39,7 @@ function App() {
     authDispatch({
       type:LOAD_AUTH
     })
-  },[])
+  },[authDispatch])
   return (
     <div className="App">
       <Router>
@@ -48,7 +48,7 @@ function App() {
         <Header/>
       </div>
       <div className="main-content" onClick={()=>setSideNav(false)}>
-        {console.log(darkMode)}
+        {/* {console.log(darkMode)} */}
 {
   sideNav?darkMode?(<div className="side-nav-menu" style={{backgroundColor:"gray"}} ><SideNavMenu/></div>):(<div className="side-nav-menu" style={{backgroundColor:"lightgray"}} ><SideNavMenu/></div>):""
 }

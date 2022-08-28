@@ -12,6 +12,7 @@ import { useData } from '../../context/dataContext';
 import { addHistory } from '../../services/historyData';
 import { useAction } from '../../context/actionContext';
 import { useAuth } from '../../context/authContext';
+import PlaylistModal from '../../components/playlist/playlistModal';
 // import FetchVedio from '../../fetch';
 // import { getVdoById,getReleatedVdo } from '../../api';
 // import { addData, initialValue } from '../../app/feature/video';
@@ -90,21 +91,22 @@ const VideoPLayer = () => {
       // console.log(value);
       // FetchVedio(getVdoById(vdoId));
       // setLoading(curr=>curr=false);
-  const {actionDispatch}=useAction();
+  const {actionDispatch,modal}=useAction();
   const {authState}=useAuth();
-  const {token}=authState
+  const {token}=authState;
       const location = useLocation();
   let  vdoData  = location.state.data;
   // const [render,setRender]=useState(false);
   useEffect(()=>{
+    // console.log(token);
     addHistory(token,actionDispatch,vdoData);
-  },[])
+  },[token,actionDispatch])
   // if(vdoData!=={}){
   //   console.log(vdoData);
   //   setRender(true)
   // }
   // const {data}=location.state
-  console.log(vdoData)
+  // console.log(vdoData)
   const {vdoList}=useData();
   const releatedVdo=vdoList.filter(i=>vdoData._id !== i._id);
   
@@ -114,15 +116,21 @@ const VideoPLayer = () => {
 
       {
        (<div className="video-player-container">
-        {console.log(vdoData)}
+        <div className="playlist-modal-display">
+
+        {
+          modal?(<PlaylistModal video={vdoData}/>):""
+        }
+        </div>
+        {/* {console.log(vdoData)} */}
       <div className="vedio-player">
       <VideoSection data={vdoData.contentDetail.link}/>
-        {console.log(vdoData)}
+        {/* {console.log(vdoData)} */}
       <VideoDesc data={vdoData}/>
-        {console.log(vdoData)}
+        {/* {console.log(vdoData)} */}
       </div>
       <div className="vedio-releated">
-        {console.log(vdoData)}
+        {/* {console.log(vdoData)} */}
       {
         releatedVdo?
         <VideoReleated data={releatedVdo}/>:""

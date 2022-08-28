@@ -7,19 +7,19 @@ import { LIKED_DATA } from "../constant/actionConstant";
 
 export const getLikedVdo= async(token,actionDispatch)=>{
     try {
-        const {data}= await axios.get("/api/user/likes",{
+        const res= await axios.get("/api/user/likes",{
             headers:{
                 authorization: token,
             },
         });
-        console.log(data);
+        console.log(res);
         actionDispatch({
             type:LIKED_DATA,
-            payload:data.likes
+            payload:res.data.likes
         });
         
     } catch (error) {
-        console.log(error.message);
+        console.log(error);
     }
 }
 export const addLikedVdo= async(token,actionDispatch,video)=>{
@@ -35,7 +35,7 @@ export const addLikedVdo= async(token,actionDispatch,video)=>{
         });
         
     } catch (error) {
-        console.log(error.message);
+        // console.log(error.message);
     }
 }
 export const removeLikedVdo= async(token,actionDispatch,id)=>{
@@ -51,6 +51,6 @@ export const removeLikedVdo= async(token,actionDispatch,id)=>{
         });
         
     } catch (error) {
-        console.log(error.message);
+        // console.log(error.message);
     }
 }

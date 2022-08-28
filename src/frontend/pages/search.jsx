@@ -6,12 +6,12 @@ import { useData } from '../context/dataContext';
 
 
 const Search = () => {
-    useEffect(()=>{
-        filterDispatch({type:CLEAR_SEARCH})
-    },[])
     const{filterState,filterDispatch}=useAction();
     const {vdoList}=useData();
-    console.log(filterState.search);
+    useEffect(()=>{
+        filterDispatch({type:CLEAR_SEARCH})
+    },[filterDispatch])
+    // console.log(filterState.search);
     // const result=()=>{
 
     // }
@@ -26,7 +26,7 @@ const Search = () => {
             return ""
         }
     })
-    console.log(result);
+    // console.log(result);
     
     return (
         <div className="search-container">
