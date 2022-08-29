@@ -12,7 +12,7 @@ import { useData } from '../../context/dataContext';
 import { addHistory } from '../../services/historyData';
 import { useAction } from '../../context/actionContext';
 import { useAuth } from '../../context/authContext';
-import PlaylistModal from '../../components/playlist/playlistModal';
+import PlaylistModal from '../../components/import';
 // import FetchVedio from '../../fetch';
 // import { getVdoById,getReleatedVdo } from '../../api';
 // import { addData, initialValue } from '../../app/feature/video';

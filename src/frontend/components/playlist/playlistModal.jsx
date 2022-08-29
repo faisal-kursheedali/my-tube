@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react'
 import { useAction } from '../../context/actionContext'
 import { useAuth } from '../../context/authContext';
 import "./playlistModal.css";
+// import "../playlist/playlistModal.css";
 import {AiOutlineCloseCircle} from "react-icons/ai"
 import { addVdoToPlaylist, createPlaylist, delVdoFromPlaylist, getPlaylistData } from '../../services/playlistServises';
 
