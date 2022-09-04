@@ -108,7 +108,7 @@ const VideoPLayer = () => {
   // const {data}=location.state
   // console.log(vdoData)
   const {vdoList}=useData();
-  const releatedVdo=vdoList.filter(i=>vdoData._id !== i._id);
+  const releatedVdo=location.state.playlistVdo||vdoList.filter(i=>vdoData._id !== i._id);
   
   
   return (

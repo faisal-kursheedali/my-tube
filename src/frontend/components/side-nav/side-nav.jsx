@@ -3,6 +3,7 @@ import "./side-nav.css";
 import {AiFillHome,AiTwotoneLike} from "react-icons/ai"
 import {RiLogoutBoxFill,RiLoginBoxFill} from "react-icons/ri"
 import {FaHistory} from "react-icons/fa"
+import {RiPlayList2Fill} from "react-icons/ri"
 import {MdWatchLater} from "react-icons/md"
 import {Link, useNavigate} from "react-router-dom"
 import { useAuth } from '../../context/authContext';
@@ -40,6 +41,11 @@ const SideNav = () => {
             <Link className='side-nav-link' to="/history">
             <FaHistory className="side-nav-icn"/>
             <span className="nav-item-txt">History</span></Link>
+                </li>
+            <li className="side-nav-item">
+            <Link className='side-nav-link' to="/playlist">
+            <RiPlayList2Fill className="side-nav-icn"/>
+            <span className="nav-item-txt">playlist</span></Link>
                 </li>
                 {
                     // console.log(token)

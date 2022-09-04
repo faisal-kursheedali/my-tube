@@ -4,7 +4,7 @@ import {
     Route,
   } from "react-router-dom";
 // import {Nav, SideNav} from '../components/import';
-import {User,Home, Like, Login, Signup, VideoPLayer, Watchlater,History,Search} from '../pages/import';
+import {User,Home, Like, Login, Signup, VideoPLayer, Watchlater,History,Search, Playlist} from '../pages/import';
 
 import PrivateRoute from './privateRoute';
 import RequirAuth from './requirAuth';
@@ -22,6 +22,11 @@ const PgRoute = () => {
             <Route path='/watchlater' element={
                 <RequirAuth>
                 <Watchlater/>
+            </RequirAuth>
+            }/>
+            <Route path='/playlist' element={
+                <RequirAuth>
+                <Playlist/>
             </RequirAuth>
             }/>
             <Route path='/user' element={
