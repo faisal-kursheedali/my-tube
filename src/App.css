@@ -1,17 +1,17 @@
 .main-content{
   display: flex;
+  width: 100vw;
   height: 90vh;
   position: relative;
 }
 .nav-container-space{
   width: 100%;
-  border-bottom: 1px solid gray;
+  /* border-bottom: 1px solid gray; */
 }
 .side-nav-container{
   width: auto;
   /* background-color: lightgray; */
   height: 100%;
-  margin-left: .5rem;
 }
 .side-mainpg-container{
   overflow-y: scroll;
@@ -37,4 +37,28 @@ body{
   min-width: 200px;
   z-index: 5;
   background-color: inherit;
+  overflow-y: scroll;
+}
+.side-nav-menu::-webkit-scrollbar{
+  width: 6px;
+  background-color: lightgray;
+}
+.side-nav-menu::-webkit-scrollbar-thumb{
+  width: 6px;
+  
+  background-color: red;
+}
+.img-for-empty-content-container{
+  display: flex;
+
+}
+.img-for-empty-content{
+  max-width: 250px;
+  margin: auto;
+  margin-top: 5rem;
+}
+@media (max-width:750px) {
+  .side-nav-container{
+    display: none;
+  }
 }

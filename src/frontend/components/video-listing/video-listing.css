@@ -6,9 +6,21 @@
     /* justify-content: flex-start; */
     /* justify-content: space-between; */
 }
-@media (max-width:750px) {
+.video-list-item{
+    /* padding: 1rem; */
+    margin: .5rem;
+    /* min-width: 200px; */
+}
+@media (max-width:770px) {
     .video-list{
         justify-content: center;
     }
     
+}
+@media (max-width:425px) {
+    .video-list-item{
+        /* padding: 1rem; */
+        margin: .5rem;
+        min-width: 90%;
+    }
 }

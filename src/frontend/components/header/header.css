@@ -12,7 +12,7 @@
     margin: auto 5px;
     max-width: 600px;
     min-width: 150px;
-    color: initial;
+    color: inherit;
     padding: 5px;
     border: 2px solid gray;
 }

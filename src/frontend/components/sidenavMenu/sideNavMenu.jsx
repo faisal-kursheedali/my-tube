@@ -7,11 +7,14 @@ import {MdWatchLater} from "react-icons/md"
 import {BsYoutube} from "react-icons/bs"
 import {BiLogIn,BiLogOut} from "react-icons/bi"
 import { useAuth } from '../../context/authContext'
+import {BsFillMoonStarsFill,BsFillSunFill} from "react-icons/bs"
 import { Link } from 'react-router-dom'
+import { useAction } from '../../context/actionContext'
 
 const SideNavMenu = () => {
   const {authState}=useAuth();
   const {token}=authState;
+  const  {darkMode,setDarkMode}=useAction();
   return (
     <div className="side-nav-menu-container">
       <Link to={"/"} style={{textDecoration:"none",color:"initial"}}>
@@ -65,6 +68,23 @@ const SideNavMenu = () => {
       </Link>
       </li>
       <hr/>
+      {
+            darkMode?<li className="side-nav-menu-list-item"  onClick={()=>{
+              setDarkMode(false)
+              localStorage.setItem("darkmode",false);
+            }}>
+              <div className="side-nav-menu-list-item-icn">
+            <BsFillSunFill style={{color:"gold"}}/></div>
+            <div className="side-nav-menu-list-item-name"  style={{color:"gold"}}>Light mode</div>
+          </li>:<li className="side-nav-menu-list-item" onClick={()=>{
+              setDarkMode(true)
+              localStorage.setItem("darkmode",false);
+            }}>
+              <div className="side-nav-menu-list-item-icn" >
+            <BsFillMoonStarsFill style={{color:"initial"}}/></div>
+            <div className="side-nav-menu-list-item-name">Dark mode</div>
+          </li>
+    }
       {
       token?(
         <li>

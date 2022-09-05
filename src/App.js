@@ -47,6 +47,7 @@ function App() {
         {/* <Nav/> */}
         <Header/>
       </div>
+      {!darkMode?<hr style={{margin:"0px"}}/>:""}
       <div className="main-content" onClick={()=>setSideNav(false)}>
         {/* {console.log(darkMode)} */}
 {

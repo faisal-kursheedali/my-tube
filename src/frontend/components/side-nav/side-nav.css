@@ -40,11 +40,11 @@
     text-align: center;
 }
 @media (max-width:425px) {
-    .side-nav{
+    /* .side-nav{
         display: none;
         z-index: 2;
     }
     .side-nav-item-txt{
         display: none;
-    }
+    } */
 }

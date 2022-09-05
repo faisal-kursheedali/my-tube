@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useRef,useEffect} from 'react'
 import "./side-nav.css";
 import {AiFillHome,AiTwotoneLike} from "react-icons/ai"
 import {RiLogoutBoxFill,RiLoginBoxFill} from "react-icons/ri"
@@ -8,19 +8,30 @@ import {MdWatchLater} from "react-icons/md"
 import {Link, useNavigate} from "react-router-dom"
 import { useAuth } from '../../context/authContext';
 import { LOGOUT_USER } from '../../constant/authConstant';
+import { useAction } from '../../context/actionContext';
 // import { sideBar,setSideBar } from '../header/header.jsx';
 const SideNav = () => {
     const {authState,authDispatch}=useAuth();
+    const {darkMode}=useAction();
     const {token}=authState;
     const navigate =useNavigate();
+    const sideNavRef=useRef(null)
 //     const [show,setShow]=useState();
 //     if (window.innerWidth >= 425) {
 //         setShow(sideBar)
 //     }else{
 //         setShow(true)
 //     }
+useEffect(() => {
+    if (darkMode) {
+        sideNavRef.current.style.backgroundColor = "#202020";
+    } else {
+        sideNavRef.current.style.backgroundColor = "initial";
+    }
+},[darkMode]);
+
   return(
-  <div className="side-nav">
+  <div className="side-nav" ref={sideNavRef}>
         <ul className="side-nav-list bui-list">
             <li className="side-nav-item">
                 <Link className='side-nav-link' to="/">
