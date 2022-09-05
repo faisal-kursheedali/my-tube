@@ -57,7 +57,7 @@ body{
   margin: auto;
   margin-top: 5rem;
 }
-@media (max-width:750px) {
+@media (max-width:770px) {
   .side-nav-container{
     display: none;
   }
