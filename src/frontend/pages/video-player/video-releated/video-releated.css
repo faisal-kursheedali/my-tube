@@ -8,6 +8,9 @@
     
 }
 
+.video-releated-list-item{
+    margin: .5rem;
+}
 @media (max-width:700px) {
     .video-releated-list{
         flex-direction: row;

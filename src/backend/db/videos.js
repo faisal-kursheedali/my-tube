@@ -14,8 +14,8 @@ export const videos = [
       thumbnail:"https://i.ytimg.com/vi/M7HCTLENGhc/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCpnubCTzs50Rmx1LmdK1bsO0S-rg",
       hoverThumbnail:"https://i.ytimg.com/an_webp/M7HCTLENGhc/mqdefault_6s.webp?du=3000&sqp=CMPR5pcG&rs=AOn4CLC26vVW9yVSuMIeKoFXoysNhxjjJg",
       // vdoLink:"https://www.youtube.com/watch?v=M7HCTLENGhc",
-      likeCount:0,
-      viewCount:0,
+      likeCount:120,
+      viewCount:550,
       description:`5,091 views  Mar 5, 2021  If you have been around coding for a bit, you may have heard of decorator functions. Well what are they and how do we use them? We are going to answer those questions in today's topic.
 
       Would you like to help keep this channel going?
@@ -41,8 +41,10 @@ export const videos = [
       #javascript #AllThingsJavaScriptLLC`,
     },
     channelDetail:{
-      channelName:"",
-      channelImg:"",
+      channelName:`
+      All Things JavaScript, LLC
+`,
+      channelImg:"https://yt3.ggpht.com/ytc/AMLnZu_KO8Ba5Sf904V_WQ_BjBL0-HxFRtCWa0fcpPyWfA=s88-c-k-c0x00ffffff-no-rj",
       subscriberCount:0
     }
 
@@ -50,143 +52,542 @@ export const videos = [
   {
     _id: uuid(),
     contentDetail:{
-      title: "If Someone Badly Treats You Do This || Dr APJ Abdul Kalam Sir || Spread Positivity",
-      link:"https://www.youtube.com/watch?v=Jc9V-bUfrx8",
-      duration:"4:50",
-      thumbnail:"	https://i.ytimg.com/vi/Jc9V-bUfrx8/hqdefault.jpg?s…AFwAcABBg==&rs=AOn4CLAKROUytCA7TQPlKcqMnl8tmyXhKA",
-      hoverThumbnail:"https://i.ytimg.com/an_webp/Jc9V-bUfrx8/mqdefault_6s.webp?du=3000&sqp=CMf45pcG&rs=AOn4CLDeBgEJ_QuA2zeELoGws2vWjcx6lQ",
+      title: "React JavaScript Framework for Beginners – Project-Based Course",
+      link:"https://www.youtube.com/watch?v=u6gSSpfsoOQ",
+      duration:"8:26:03",
+      thumbnail:"https://i.ytimg.com/vi/u6gSSpfsoOQ/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLDCAlpWBePAoez57G1tS2c6isHIxw",
+      hoverThumbnail:"https://i.ytimg.com/an_webp/u6gSSpfsoOQ/mqdefault_6s.webp?du=3000&sqp=CICE2JgG&rs=AOn4CLATxrgNbpwuC1awUVV8DRLnyz-abQ",
       // vdoLink:"https://www.youtube.com/watch?v=M7HCTLENGhc",
-      likeCount:0,
-      viewCount:0,
-      description:`441,712 views  Oct 25, 2021  If Someone Badly Treats You Do This || Dr APJ Abdul Kalam Sir || Spread Positivity`,
+      likeCount:"5k",
+      viewCount:"180k",
+      description:`108,352 views  Aug 31, 2022  Learn React in this full course for beginners. React is one of the most popular JavaScript frameworks and this course is the perfect place to start your learning journey. You will learn everything you need to know to get started with React by building three different projects.
+
+      We brought together three popular teachers for this course so you can learn from multiple perspectives.
+      
+      You can code React all in a web browser using Replit. Replit provided a grant that made this course possible.
+      
+      🔗 https://join.replit.com/react-students
+      
+      ⭐️ Part One ⭐️
+      ✏️ Instructor: Gavin Lon
+      🎥 Gavin's channel: https://www.youtube.com/c/GavinLon
+      💻 Code from video (using Prop Drilling): https://replit.com/@GavinLon/TeamMemb...
+      💻 Code alternate (using Context to avoid prop drilling): https://github.com/GavinLonDigital/Te...
+      🔗 How to Create a Free Replit Account: https://www.freecodecamp.org/news/how...
+      🔗 What is a repl and how to create one: https://www.freecodecamp.org/news/how...
+      🔗 Function component vs class component: https://reactjs.org/docs/components-a...
+      🔗 JavaScript Arrow Functions: https://www.freecodecamp.org/news/jav...
+      🔗 Hooks and State in React: https://reactjs.org/docs/hooks-state....
+      🔗 The Bootstrap Grid System: https://getbootstrap.com/docs/5.0/lay...
+      🔗 Understanding Props in React: https://www.freecodecamp.org/news/how...
+      🔗 Using Context in React:https://reactjs.org/docs/context.html
+      
+      ⭐️ Part Two ⭐️
+      ✏️ Instructor: John Smilga
+      🎥 Gavin's channel: https://www.youtube.com/c/CodingAddict
+      💻 Complete App: https://meals-application.john-smilga...
+      💻 Source Code: https://replit.com/@john-smilga/meals...
+      
+      ⭐️ Part Three ⭐️
+      ✏️ Instructor: Sanjeev Thiyagarajan
+      🎥 Gavin's channel: https://www.youtube.com/c/SanjeevThiy...
+      💻 Code: https://replit.com/@SanjeevThiyagar/r...
+      
+      
+      
+      ⭐️ Contents ⭐️
+      ⌨️ (0:00:00) Course Introduction
+      
+      ⌨️ (0:02:03) Introduction, part 1
+      ⌨️ (0:06:15) What is Replit
+      ⌨️ (0:07:50) What is React
+      ⌨️ (0:08:23) Create a Repl
+      ⌨️ (0:11:29) Create Functional Components
+      ⌨️ (0:18:02) Install Bootstrap 5
+      ⌨️ (0:22:49) Implement the useState Hook in a Functional Component
+      ⌨️ (0:29:16) Upload Image Files to Replit
+      ⌨️ (0:33:28) Create JSX Code to Render Bootstrap Cards for Employees
+      ⌨️ (0:40:49) Create Teams DropDown List
+      ⌨️ (0:45:03) Use JavaScript Events to Set State
+      ⌨️ (0:54:26) Move State Related Functionality to the App Component
+      ⌨️ (0:56:48) Understanding Props
+      ⌨️ (1:04:41) LocalStorage and the useEffect Hook
+      ⌨️ (1:11:47) Routing, react-router-dom package, Navigation
+      ⌨️ (1:25:25) Create Employee Component
+      ⌨️ (1:38:03) Abstract Responsibilities Into Functional Components
+      ⌨️ (1:46:14) Implement Media Queries
+      ⌨️ (1:47:04) Using Context to Reduce or Avoid Prop Drilling
+      ⌨️ (1:48:50) Course Wrap up
+      
+      ⌨️ (1:49:15) Introduction, part 2
+      ⌨️ (1:53:12) Setup
+      ⌨️ (2:08:03) Context API
+      ⌨️ (2:30:46) Data Fetching
+      ⌨️ (2:42:08) Meals Component
+      ⌨️ (3:38:29) Search Component
+      ⌨️ (4:10:11) Modal Component
+      ⌨️ (4:43:04) Favorites Component
+      
+      ⌨️ (5:14:27) Introduction, part 3
+      ⌨️ (5:20:32) Initialize Project
+      ⌨️ (5:22:48) React Router
+      ⌨️ (5:30:23) Fetching Data From API
+      ⌨️ (5:49:46) Multiple Requests with Promise.all()
+      ⌨️ (5:54:05) Map Method for rendering lists
+      ⌨️ (6:04:12) Rendering Table of Stocks
+      ⌨️ (6:09:12) Color Coding data
+      ⌨️ (6:16:55) Autocomplete Search Component
+      ⌨️ (6:39:12) Context API
+      ⌨️ (6:59:40) Navigating Between Pages
+      ⌨️ (7:03:52) Fetching Historical Data
+      ⌨️ (7:25:22) Formatting Data
+      ⌨️ (7:31:31) Working with Charts
+      ⌨️ (7:44:18) Chart Time Toggle
+      ⌨️ (7:58:54) Delete Stock (Event Propagation)
+      ⌨️ (8:05:26) Stock Data
+      ⌨️ (8:16:52) Local Storage
+      
+      🎉 Thanks to our Champion and Sponsor supporters:
+      👾 Raymond Odero
+      👾 Agustín Kussrow
+      👾 aldo ferretti
+      👾 Otis Morgan
+      👾 DeezMaster
+      
+      --
+      
+      Learn to code for free and get a developer job: https://www.freecodecamp.org
+      
+      Read hundreds of articles on programming: https://freecodecamp.org/news`,
     },
     channelDetail:{
-      channelName:`Spread Positivity`,
-      channelImg:"https://yt3.ggpht.com/ytc/AMLnZu-qDRHNZAfKv1m0bGArvRCabvgmiRcSbaE6w6uW=s88-c-k-c0x00ffffff-no-rj",
-      subscriberCount:0
+      channelName:`
+      freeCodeCamp.org
+`,
+      channelImg:"https://yt3.ggpht.com/ytc/AMLnZu9UWrGceKWaqm8AF89vuxrEt8MO3E59qOoQ785Lew=s68-c-k-c0x00ffffff-no-rj",
+      subscriberCount:"6.2M"
     }
 
   },
   {
     _id: uuid(),
     contentDetail:{
-      title: "If Someone Badly Treats You Do This || Dr APJ Abdul Kalam Sir || Spread Positivity",
-      link:"https://www.youtube.com/watch?v=Jc9V-bUfrx8",
-      duration:"4:50",
-      thumbnail:"	https://i.ytimg.com/vi/Jc9V-bUfrx8/hqdefault.jpg?s…AFwAcABBg==&rs=AOn4CLAKROUytCA7TQPlKcqMnl8tmyXhKA",
-      hoverThumbnail:"https://i.ytimg.com/an_webp/Jc9V-bUfrx8/mqdefault_6s.webp?du=3000&sqp=CMf45pcG&rs=AOn4CLDeBgEJ_QuA2zeELoGws2vWjcx6lQ",
+      title: "CSS Tutorial – Full Course for Beginners",
+      link:"https://www.youtube.com/watch?v=OXGznpKZ_sA",
+      duration:"11:08:10",
+      thumbnail:"https://i.ytimg.com/vi/OXGznpKZ_sA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDsg0OLTym9pwK5miBPyiVat1_8vQ",
+      hoverThumbnail:"https://i.ytimg.com/an_webp/OXGznpKZ_sA/mqdefault_6s.webp?du=3000&sqp=CJCX2JgG&rs=AOn4CLADtLc6DVCdYVpwtqLPIH5DRLlqaA",
       // vdoLink:"https://www.youtube.com/watch?v=M7HCTLENGhc",
-      likeCount:0,
-      viewCount:0,
-      description:`441,712 views  Oct 25, 2021  If Someone Badly Treats You Do This || Dr APJ Abdul Kalam Sir || Spread Positivity`,
+      likeCount:"69k",
+      viewCount:"180k",
+      description:`69,103 views  Aug 30, 2022  In this in-depth course, you will learn about all the key features of CSS. This is the most comprehensive CSS course we've published to date. So if you want to become an expert in Cascading Style Sheets, this is the course for you.
+
+      ✏️ Course from Dave Gray. Check out his channel: http://youtube.com/DaveGrayTeachesCode 
+      
+      💻 Course Resources: https://github.com/gitdagray/css_course
+      
+      🎥 Dave's HTML course: https://youtu.be/kUMe1FH4CHE
+      
+      ⭐️ Course Contents ⭐️
+      (0:00:00) Intro
+      (0:01:08) Chapter 1: Start Here
+      (0:14:50) Chapter 2: Selectors
+      (0:34:41) Chapter 3: Colors
+      (0:51:13) Chapter 4: Units & Sizes
+      (1:11:56) Chapter 5: Box Model
+      (1:37:08) Chapter 6: Typography
+      (2:00:29) Chapter 7: Styling Links
+      (2:16:37) Chapter 8: List Styles
+      (2:32:31) Chapter 9: Mini Project
+      (2:45:04) Chapter 10: Display
+      (3:00:21) Chapter 11: Floats
+      (3:12:46) Chapter 12: Columns
+      (3:34:30) Chapter 13: Position
+      (3:57:53) Chapter 14: Flexbox
+      (4:21:39) Chapter 15: Grid Layout
+      (4:46:33) Chapter 16: Images
+      (5:32:40) Chapter 17: Media Queries
+      (5:58:59) Chapter 18: Card Project
+      (6:33:21) Chapter 19: Pseudo
+      (6:52:56) Chapter 20: Variables
+      (7:20:28) Chapter 21: Functions
+      (7:50:05) Chapter 22: Animations
+      (8:37:33) Chapter 23: Organization
+      (8:57:23) Chapter 24: Final Project
+      
+      🎉 Thanks to our Champion and Sponsor supporters:
+      👾 Raymond Odero
+      👾 Agustín Kussrow
+      👾 aldo ferretti
+      👾 Otis Morgan
+      👾 DeezMaster
+      
+      --
+      
+      Learn to code for free and get a developer job: https://www.freecodecamp.org
+      
+      Read hundreds of articles on programming: https://freecodecamp.org/news
+      `,
     },
     channelDetail:{
-      channelName:`Spread Positivity`,
-      channelImg:"https://yt3.ggpht.com/ytc/AMLnZu-qDRHNZAfKv1m0bGArvRCabvgmiRcSbaE6w6uW=s88-c-k-c0x00ffffff-no-rj",
-      subscriberCount:0
+      channelName:`
+      freeCodeCamp.org
+`,
+      channelImg:"https://yt3.ggpht.com/ytc/AMLnZu9UWrGceKWaqm8AF89vuxrEt8MO3E59qOoQ785Lew=s68-c-k-c0x00ffffff-no-rj",
+      subscriberCount:"6.2M"
     }
 
   },
   {
     _id: uuid(),
     contentDetail:{
-      title: "If Someone Badly Treats You Do This || Dr APJ Abdul Kalam Sir || Spread Positivity",
-      link:"https://www.youtube.com/watch?v=Jc9V-bUfrx8",
-      duration:"4:50",
-      thumbnail:"	https://i.ytimg.com/vi/Jc9V-bUfrx8/hqdefault.jpg?s…AFwAcABBg==&rs=AOn4CLAKROUytCA7TQPlKcqMnl8tmyXhKA",
-      hoverThumbnail:"https://i.ytimg.com/an_webp/Jc9V-bUfrx8/mqdefault_6s.webp?du=3000&sqp=CMf45pcG&rs=AOn4CLDeBgEJ_QuA2zeELoGws2vWjcx6lQ",
+      title: "Table Navigation | JavaScript Tutorial in Hindi #35",
+      link:"https://www.youtube.com/watch?v=4e5L4i-mmxg",
+      duration:"09:44",
+      thumbnail:"https://i.ytimg.com/vi/4e5L4i-mmxg/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLA5WKyyzpYxSOtvpc3vDF7hTgnJJQ",
+      hoverThumbnail:"https://i.ytimg.com/an_webp/4e5L4i-mmxg/mqdefault_6s.webp?du=3000&sqp=CNjl15gG&rs=AOn4CLAhvd5UQQxhJuO8GfvFnXr1frz-uw",
       // vdoLink:"https://www.youtube.com/watch?v=M7HCTLENGhc",
-      likeCount:0,
-      viewCount:0,
-      description:`441,712 views  Oct 25, 2021  If Someone Badly Treats You Do This || Dr APJ Abdul Kalam Sir || Spread Positivity`,
+      likeCount:"10k",
+      viewCount:"553",
+      description:`10,502 views  Sep 4, 2022  Link to the Repl - https://replit.com/@codewithharry/35t...
+Join Replit - https://join.replit.com/CodeWithHarry
+Download Notes - https://drive.google.com/drive/folder...
+Ultimate JS Course Playlist: https://www.youtube.com/playlist?list...
+►Checkout my English channel here: https://www.youtube.com/channel/UC7bt...
+►Instagram: www.instagram.com/codewithharry
+
+python, C, C++, Java, JavaScript and Other Cheetsheets [++]:
+Playlist: https://www.youtube.com/playlist?list...
+
+►Learn in One Video[++]:
+Python[15 Hr]: https://www.youtube.com/watch?v=gfDE2...
+Python Advance[3.5 Hr]: https://www.youtube.com/watch?v=61a7U...
+Python[1 Hr]: https://www.youtube.com/watch?v=qHJjM...
+Python[2 Hr]: https://www.youtube.com/watch?v=ihk_X...
+Python[15 Min]:https://www.youtube.com/watch?v=fr1f8...
+JavaScript[1 Hr]: https://www.youtube.com/watch?v=onbBV...
+C[1.3 Hr]-https://www.youtube.com/watch?v=YXcgD...
+php[1 Hr]: https://www.youtube.com/watch?v=xW7ro...
+php[2.3 Hr]:https://www.youtube.com/watch?v=1SnPK...
+php[Project]- https://www.youtube.com/watch?v=-al2b...
+HTML[30 Min]:https://www.youtube.com/watch?v=E3ByC...
+CSS[8.5 Hr]:https://www.youtube.com/watch?v=Edsxf...
+CSS[1.4 Hr]:https://www.youtube.com/watch?v=u5-K_...
+Wordpress[3.2 Hr]:https://www.youtube.com/watch?v=GlLRY...
+Angular[2 Hr]:https://www.youtube.com/watch?v=0LhBv...
+Java[2.3 Hr]:https://www.youtube.com/watch?v=rV_3L...
+Web Scraping[1 Hr]:https://www.youtube.com/watch?v=uufDG...
+MongoDB[2 Hr]:https://www.youtube.com/watch?v=oSIv-...
+Numpy[1 Hr]:https://www.youtube.com/watch?v=Rbh1r...
+Android Dev[12 Hr]- https://www.youtube.com/watch?v=mXjZQ...
+Linux[1 Hr]:https://www.youtube.com/watch?v=_tCY-...
+JQuery[1.1 Hr]:https://www.youtube.com/watch?v=YFlx1...
+Git and GitHub[1.1 Hr]:https://www.youtube.com/watch?v=gwWKn...
+
+►Complete course [playlist]:
+React: https://www.youtube.com/playlist?list...
+Python-https://www.youtube.com/playlist?list...
+OOP Python-https://www.youtube.com/playlist?list...
+Java:https://www.youtube.com/playlist?list...
+JavaScript- https://www.youtube.com/playlist?list...
+PHP-https://www.youtube.com/playlist?list...
+C-https://www.youtube.com/playlist?list...
+C++-https://www.youtube.com/playlist?list...
+Git & GitHub-https://www.youtube.com/playlist?list...
+Android Dev- https://www.youtube.com/playlist?list...
+Python GUI- https://www.youtube.com/playlist?list...
+Web Development- https://www.youtube.com/playlist?list...
+Python Django:https://www.youtube.com/playlist?list...
+Projects Using HTML, CSS & Javascript- https://www.youtube.com/playlist?list...
+Data Structure and Algo:https://www.youtube.com/playlist?list... 
+
+Follow Me On Social Media
+►Website (created using Django Rest & Angular): https://www.codewithharry.com
+►Facebook: https://www.facebook.com/CodeWithHarry
+►Instagram: https://www.instagram.com/codewithharry/ 
+Twitter: https://twitter.com/CodeWithHarry
+Comment "#HarryBhai" if you read this 😉😉`,
     },
     channelDetail:{
-      channelName:`Spread Positivity`,
-      channelImg:"https://yt3.ggpht.com/ytc/AMLnZu-qDRHNZAfKv1m0bGArvRCabvgmiRcSbaE6w6uW=s88-c-k-c0x00ffffff-no-rj",
-      subscriberCount:0
+      channelName:`
+      CodeWithHarry
+
+`,
+      channelImg:"https://yt3.ggpht.com/ytc/AMLnZu8dZQJYCt6Ffcd-pl113huuo_HJ3PpvgkyFk5FkrQ=s88-c-k-c0x00ffffff-no-rj",
+      subscriberCount:"3.2M"
     }
 
   },
   {
     _id: uuid(),
     contentDetail:{
-      title: "If Someone Badly Treats You Do This || Dr APJ Abdul Kalam Sir || Spread Positivity",
-      link:"https://www.youtube.com/watch?v=Jc9V-bUfrx8",
-      duration:"4:50",
-      thumbnail:"	https://i.ytimg.com/vi/Jc9V-bUfrx8/hqdefault.jpg?s…AFwAcABBg==&rs=AOn4CLAKROUytCA7TQPlKcqMnl8tmyXhKA",
-      hoverThumbnail:"https://i.ytimg.com/an_webp/Jc9V-bUfrx8/mqdefault_6s.webp?du=3000&sqp=CMf45pcG&rs=AOn4CLDeBgEJ_QuA2zeELoGws2vWjcx6lQ",
+      title: "Machine Learning use cases you probably don't know about",
+      link:"https://www.youtube.com/watch?v=maCVf_t3M2A",
+      duration:"10:50",
+      thumbnail:"https://i.ytimg.com/vi/maCVf_t3M2A/hqdefault.jpg?s…AFwAcABBg==&rs=AOn4CLDk_wIkSBdHGDYGlqSioYm4Z19U-w",
+      hoverThumbnail:"https://i.ytimg.com/an_webp/maCVf_t3M2A/mqdefault_6s.webp?du=3000&sqp=COCK2JgG&rs=AOn4CLDIwPrFLtxchNP5K1JszIZkttSlxA",
       // vdoLink:"https://www.youtube.com/watch?v=M7HCTLENGhc",
-      likeCount:0,
-      viewCount:0,
-      description:`441,712 views  Oct 25, 2021  If Someone Badly Treats You Do This || Dr APJ Abdul Kalam Sir || Spread Positivity`,
+      likeCount:"10k",
+      viewCount:"4.6k",
+      description:`68,278 views  Aug 25, 2022  Free Download AI Virtual Presenters: https://bit.ly/3QyUUsM
+      Wondershare DemoCreator is an essential demo-making tool that helps learners, educators, freelancers, and gamers to take idea-sharing to the next level. Get a taste of the Metaverse with Metahuman.
+      Learn More Tutorials about Wondershare DemoCreator: https://bit.ly/3w1OIRV
+      TimeStamps:
+      00:00 - 02:31 Introduction 
+      02:31 - 05:03 Wondershare Democreator
+      05:03 - 06:45 Other Video Applications
+      06:45 - 07:27 Voice cloning 
+      07:27 - 08:35 Text Generation
+      08:35 - 10:49 Chatbot
+      
+      ►Checkout my English channel here: https://www.youtube.com/channel/UC7bt...
+      ►Instagram: www.instagram.com/codewithharry
+      
+      python, C, C++, Java, JavaScript and Other Cheetsheets [++]:
+      Playlist: https://www.youtube.com/playlist?list...
+      
+      ►Learn in One Video[++]:
+      Python[15 Hr] - https://www.youtube.com/watch?v=gfDE2...
+      Python Advance[3.5 Hr] - https://www.youtube.com/watch?v=61a7U...
+      Python[1 Hr] - https://www.youtube.com/watch?v=qHJjM...
+      Python[2 Hr] - https://www.youtube.com/watch?v=ihk_X...
+      Python[15 Min] https://www.youtube.com/watch?v=fr1f8...
+      JavaScript[1 Hr] - https://www.youtube.com/watch?v=onbBV...
+      C[1.3 Hr]-https://www.youtube.com/watch?v=YXcgD...
+      php[1 Hr] - https://www.youtube.com/watch?v=xW7ro...
+      php[2.3 Hr] -https://www.youtube.com/watch?v=1SnPK...
+      php[Project] https://www.youtube.com/watch?v=-al2b...
+      HTML[30 Min] https://www.youtube.com/watch?v=E3ByC...
+      CSS[8.5 Hr] -https://www.youtube.com/watch?v=Edsxf...
+      CSS[1.4 Hr] -https://www.youtube.com/watch?v=u5-K_...
+      Wordpress[3.2 Hr] -https://www.youtube.com/watch?v=GlLRY...
+      Angular[2 Hr] -https://www.youtube.com/watch?v=0LhBv...
+      Java[2.3 Hr] -https://www.youtube.com/watch?v=rV_3L...
+      Web Scraping[1 Hr] -https://www.youtube.com/watch?v=uufDG...
+      MongoDB[2 Hr] -https://www.youtube.com/watch?v=oSIv-...
+      Numpy[1 Hr] -https://www.youtube.com/watch?v=Rbh1r...
+      Android Dev[12 Hr] https://www.youtube.com/watch?v=mXjZQ...
+      Linux[1 Hr] https://www.youtube.com/watch?v=_tCY-...
+      JQuery[1.1 Hr] -https://www.youtube.com/watch?v=YFlx1...
+      Git and GitHub[1.1 Hr] -https://www.youtube.com/watch?v=gwWKn...
+      
+      ►Complete course [playlist]:
+      React - https://www.youtube.com/playlist?list...
+      Python-https://www.youtube.com/playlist?list...
+      OOP Python-https://www.youtube.com/playlist?list...
+      Java -https://www.youtube.com/playlist?list...
+      JavaScript https://www.youtube.com/playlist?list...
+      PHP-https://www.youtube.com/playlist?list...
+      C-https://www.youtube.com/playlist?list...
+      C++-https://www.youtube.com/playlist?list...
+      Git & GitHub-https://www.youtube.com/playlist?list...
+      Android Dev- https://www.youtube.com/playlist?list...
+      Python GUI- https://www.youtube.com/playlist?list...
+      Web Development- https://www.youtube.com/playlist?list...
+      Python Django https://www.youtube.com/playlist?list...
+      Projects Using HTML, CSS & Javascript https://www.youtube.com/playlist?list...
+      Data Structure and Algo -https://www.youtube.com/playlist?list... 
+      
+      Follow Me On Social Media
+      ►Website (created using Django Rest & Angular) - https://www.codewithharry.com
+      ►Facebook - https://www.facebook.com/CodeWithHarry
+      ►Instagram - https://www.instagram.com/codewithharry/ 
+      Twitter - https://twitter.com/CodeWithHarry
+      Comment "#HarryBhai" if you read this 😉😉
+      #CodeWithHarry #Artificial Intelligence #Wondershare #DemoCreator #PresentWithDemoCreator
+      `,
     },
     channelDetail:{
-      channelName:`Spread Positivity`,
-      channelImg:"https://yt3.ggpht.com/ytc/AMLnZu-qDRHNZAfKv1m0bGArvRCabvgmiRcSbaE6w6uW=s88-c-k-c0x00ffffff-no-rj",
-      subscriberCount:0
+      channelName:`
+      CodeWithHarry
+
+`,
+      channelImg:"https://yt3.ggpht.com/ytc/AMLnZu8dZQJYCt6Ffcd-pl113huuo_HJ3PpvgkyFk5FkrQ=s88-c-k-c0x00ffffff-no-rj",
+      subscriberCount:"3.2M"
+    }
+
+  }
+  ,
+  {
+    _id: uuid(),
+    contentDetail:{
+      title: "Full Stack Java Developer Live Course | Job Guarantee | Announcement",
+      link:"https://www.youtube.com/watch?v=b7OryQDDCsU",
+      duration:"08:26",
+      thumbnail:"https://i.ytimg.com/vi/b7OryQDDCsU/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBoUyC9f4PieLPbir-NcghzXE07dw",
+      hoverThumbnail:"https://i.ytimg.com/an_webp/b7OryQDDCsU/mqdefault_6s.webp?du=3000&sqp=CImW2JgG&rs=AOn4CLDyQijtg5kQnBcVpAP2JKiJxqY7Lw",
+      // vdoLink:"https://www.youtube.com/watch?v=M7HCTLENGhc",
+      likeCount:"10k",
+      viewCount:"40k",
+      description:`68,278 views  Aug 25, 2022  Free Download AI Virtual Presenters: https://bit.ly/3QyUUsM
+      Wondershare DemoCreator is an essential demo-making tool that helps learners, educators, freelancers, and gamers to take idea-sharing to the next level. Get a taste of the Metaverse with Metahuman.
+      Learn More Tutorials about Wondershare DemoCreator: https://bit.ly/3w1OIRV
+      TimeStamps:
+      00:00 - 02:31 Introduction 
+      02:31 - 05:03 Wondershare Democreator
+      05:03 - 06:45 Other Video Applications
+      06:45 - 07:27 Voice cloning 
+      07:27 - 08:35 Text Generation
+      08:35 - 10:49 Chatbot
+      
+      ►Checkout my English channel here: https://www.youtube.com/channel/UC7bt...
+      ►Instagram: www.instagram.com/codewithharry
+      
+      python, C, C++, Java, JavaScript and Other Cheetsheets [++]:
+      Playlist: https://www.youtube.com/playlist?list...
+      
+      ►Learn in One Video[++]:
+      Python[15 Hr] - https://www.youtube.com/watch?v=gfDE2...
+      Python Advance[3.5 Hr] - https://www.youtube.com/watch?v=61a7U...
+      Python[1 Hr] - https://www.youtube.com/watch?v=qHJjM...
+      Python[2 Hr] - https://www.youtube.com/watch?v=ihk_X...
+      Python[15 Min] https://www.youtube.com/watch?v=fr1f8...
+      JavaScript[1 Hr] - https://www.youtube.com/watch?v=onbBV...
+      C[1.3 Hr]-https://www.youtube.com/watch?v=YXcgD...
+      php[1 Hr] - https://www.youtube.com/watch?v=xW7ro...
+      php[2.3 Hr] -https://www.youtube.com/watch?v=1SnPK...
+      php[Project] https://www.youtube.com/watch?v=-al2b...
+      HTML[30 Min] https://www.youtube.com/watch?v=E3ByC...
+      CSS[8.5 Hr] -https://www.youtube.com/watch?v=Edsxf...
+      CSS[1.4 Hr] -https://www.youtube.com/watch?v=u5-K_...
+      Wordpress[3.2 Hr] -https://www.youtube.com/watch?v=GlLRY...
+      Angular[2 Hr] -https://www.youtube.com/watch?v=0LhBv...
+      Java[2.3 Hr] -https://www.youtube.com/watch?v=rV_3L...
+      Web Scraping[1 Hr] -https://www.youtube.com/watch?v=uufDG...
+      MongoDB[2 Hr] -https://www.youtube.com/watch?v=oSIv-...
+      Numpy[1 Hr] -https://www.youtube.com/watch?v=Rbh1r...
+      Android Dev[12 Hr] https://www.youtube.com/watch?v=mXjZQ...
+      Linux[1 Hr] https://www.youtube.com/watch?v=_tCY-...
+      JQuery[1.1 Hr] -https://www.youtube.com/watch?v=YFlx1...
+      Git and GitHub[1.1 Hr] -https://www.youtube.com/watch?v=gwWKn...
+      
+      ►Complete course [playlist]:
+      React - https://www.youtube.com/playlist?list...
+      Python-https://www.youtube.com/playlist?list...
+      OOP Python-https://www.youtube.com/playlist?list...
+      Java -https://www.youtube.com/playlist?list...
+      JavaScript https://www.youtube.com/playlist?list...
+      PHP-https://www.youtube.com/playlist?list...
+      C-https://www.youtube.com/playlist?list...
+      C++-https://www.youtube.com/playlist?list...
+      Git & GitHub-https://www.youtube.com/playlist?list...
+      Android Dev- https://www.youtube.com/playlist?list...
+      Python GUI- https://www.youtube.com/playlist?list...
+      Web Development- https://www.youtube.com/playlist?list...
+      Python Django https://www.youtube.com/playlist?list...
+      Projects Using HTML, CSS & Javascript https://www.youtube.com/playlist?list...
+      Data Structure and Algo -https://www.youtube.com/playlist?list... 
+      
+      Follow Me On Social Media
+      ►Website (created using Django Rest & Angular) - https://www.codewithharry.com
+      ►Facebook - https://www.facebook.com/CodeWithHarry
+      ►Instagram - https://www.instagram.com/codewithharry/ 
+      Twitter - https://twitter.com/CodeWithHarry
+      Comment "#HarryBhai" if you read this 😉😉
+      #CodeWithHarry #Artificial Intelligence #Wondershare #DemoCreator #PresentWithDemoCreator
+      `,
+    },
+    channelDetail:{
+      channelName:`
+      
+Telusko
+
+
+`,
+      channelImg:"https://yt3.ggpht.com/o4MZVi2qdNgx0K7vpEl7DT2PefjROdisZTD7is6TMimF1_DTM49O1ld3iQzTpE5MCj86c-vzav8=s88-c-k-c0x00ffffff-no-rj",
+      subscriberCount:"3.2M"
     }
 
   },
   {
     _id: uuid(),
     contentDetail:{
-      title: "If Someone Badly Treats You Do This || Dr APJ Abdul Kalam Sir || Spread Positivity",
-      link:"https://www.youtube.com/watch?v=Jc9V-bUfrx8",
-      duration:"4:50",
-      thumbnail:"	https://i.ytimg.com/vi/Jc9V-bUfrx8/hqdefault.jpg?s…AFwAcABBg==&rs=AOn4CLAKROUytCA7TQPlKcqMnl8tmyXhKA",
-      hoverThumbnail:"https://i.ytimg.com/an_webp/Jc9V-bUfrx8/mqdefault_6s.webp?du=3000&sqp=CMf45pcG&rs=AOn4CLDeBgEJ_QuA2zeELoGws2vWjcx6lQ",
+      title: "Which is the Best Programming Language to Learn First?",
+      link:"https://www.youtube.com/watch?v=XUDupRFg3Ug",
+      duration:"07:05",
+      thumbnail:"https://i.ytimg.com/vi/XUDupRFg3Ug/hqdefault.jpg?s…AFwAcABBg==&rs=AOn4CLAw5uS-8kRPJYFlqyao-cNgn1_rng",
+      hoverThumbnail:"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
       // vdoLink:"https://www.youtube.com/watch?v=M7HCTLENGhc",
-      likeCount:0,
-      viewCount:0,
-      description:`441,712 views  Oct 25, 2021  If Someone Badly Treats You Do This || Dr APJ Abdul Kalam Sir || Spread Positivity`,
+      likeCount:"9k",
+      viewCount:"45k",
+      description:`68,278 views  Aug 25, 2022  Free Download AI Virtual Presenters: https://bit.ly/3QyUUsM
+      Wondershare DemoCreator is an essential demo-making tool that helps learners, educators, freelancers, and gamers to take idea-sharing to the next level. Get a taste of the Metaverse with Metahuman.
+      Learn More Tutorials about Wondershare DemoCreator: https://bit.ly/3w1OIRV
+      TimeStamps:
+      00:00 - 02:31 Introduction 
+      02:31 - 05:03 Wondershare Democreator
+      05:03 - 06:45 Other Video Applications
+      06:45 - 07:27 Voice cloning 
+      07:27 - 08:35 Text Generation
+      08:35 - 10:49 Chatbot
+      
+      ►Checkout my English channel here: https://www.youtube.com/channel/UC7bt...
+      ►Instagram: www.instagram.com/codewithharry
+      
+      python, C, C++, Java, JavaScript and Other Cheetsheets [++]:
+      Playlist: https://www.youtube.com/playlist?list...
+      
+      ►Learn in One Video[++]:
+      Python[15 Hr] - https://www.youtube.com/watch?v=gfDE2...
+      Python Advance[3.5 Hr] - https://www.youtube.com/watch?v=61a7U...
+      Python[1 Hr] - https://www.youtube.com/watch?v=qHJjM...
+      Python[2 Hr] - https://www.youtube.com/watch?v=ihk_X...
+      Python[15 Min] https://www.youtube.com/watch?v=fr1f8...
+      JavaScript[1 Hr] - https://www.youtube.com/watch?v=onbBV...
+      C[1.3 Hr]-https://www.youtube.com/watch?v=YXcgD...
+      php[1 Hr] - https://www.youtube.com/watch?v=xW7ro...
+      php[2.3 Hr] -https://www.youtube.com/watch?v=1SnPK...
+      php[Project] https://www.youtube.com/watch?v=-al2b...
+      HTML[30 Min] https://www.youtube.com/watch?v=E3ByC...
+      CSS[8.5 Hr] -https://www.youtube.com/watch?v=Edsxf...
+      CSS[1.4 Hr] -https://www.youtube.com/watch?v=u5-K_...
+      Wordpress[3.2 Hr] -https://www.youtube.com/watch?v=GlLRY...
+      Angular[2 Hr] -https://www.youtube.com/watch?v=0LhBv...
+      Java[2.3 Hr] -https://www.youtube.com/watch?v=rV_3L...
+      Web Scraping[1 Hr] -https://www.youtube.com/watch?v=uufDG...
+      MongoDB[2 Hr] -https://www.youtube.com/watch?v=oSIv-...
+      Numpy[1 Hr] -https://www.youtube.com/watch?v=Rbh1r...
+      Android Dev[12 Hr] https://www.youtube.com/watch?v=mXjZQ...
+      Linux[1 Hr] https://www.youtube.com/watch?v=_tCY-...
+      JQuery[1.1 Hr] -https://www.youtube.com/watch?v=YFlx1...
+      Git and GitHub[1.1 Hr] -https://www.youtube.com/watch?v=gwWKn...
+      
+      ►Complete course [playlist]:
+      React - https://www.youtube.com/playlist?list...
+      Python-https://www.youtube.com/playlist?list...
+      OOP Python-https://www.youtube.com/playlist?list...
+      Java -https://www.youtube.com/playlist?list...
+      JavaScript https://www.youtube.com/playlist?list...
+      PHP-https://www.youtube.com/playlist?list...
+      C-https://www.youtube.com/playlist?list...
+      C++-https://www.youtube.com/playlist?list...
+      Git & GitHub-https://www.youtube.com/playlist?list...
+      Android Dev- https://www.youtube.com/playlist?list...
+      Python GUI- https://www.youtube.com/playlist?list...
+      Web Development- https://www.youtube.com/playlist?list...
+      Python Django https://www.youtube.com/playlist?list...
+      Projects Using HTML, CSS & Javascript https://www.youtube.com/playlist?list...
+      Data Structure and Algo -https://www.youtube.com/playlist?list... 
+      
+      Follow Me On Social Media
+      ►Website (created using Django Rest & Angular) - https://www.codewithharry.com
+      ►Facebook - https://www.facebook.com/CodeWithHarry
+      ►Instagram - https://www.instagram.com/codewithharry/ 
+      Twitter - https://twitter.com/CodeWithHarry
+      Comment "#HarryBhai" if you read this 😉😉
+      #CodeWithHarry #Artificial Intelligence #Wondershare #DemoCreator #PresentWithDemoCreator
+      `,
     },
     channelDetail:{
-      channelName:`Spread Positivity`,
-      channelImg:"https://yt3.ggpht.com/ytc/AMLnZu-qDRHNZAfKv1m0bGArvRCabvgmiRcSbaE6w6uW=s88-c-k-c0x00ffffff-no-rj",
-      subscriberCount:0
+      channelName:`
+      
+Telusko
+
+
+`,
+      channelImg:"https://yt3.ggpht.com/o4MZVi2qdNgx0K7vpEl7DT2PefjROdisZTD7is6TMimF1_DTM49O1ld3iQzTpE5MCj86c-vzav8=s88-c-k-c0x00ffffff-no-rj",
+      subscriberCount:"3.2M"
     }
 
-  },
-  {
-    _id: uuid(),
-    contentDetail:{
-      title: "JavaScript Question: What is a Decorator Function?",
-      link:"https://www.youtube.com/watch?v=M7HCTLENGhc",
-      duration:"12:59",
-      thumbnail:"https://i.ytimg.com/vi/M7HCTLENGhc/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCpnubCTzs50Rmx1LmdK1bsO0S-rg",
-      hoverThumbnail:"https://i.ytimg.com/an_webp/M7HCTLENGhc/mqdefault_6s.webp?du=3000&sqp=CMPR5pcG&rs=AOn4CLC26vVW9yVSuMIeKoFXoysNhxjjJg",
-      // vdoLink:"https://www.youtube.com/watch?v=M7HCTLENGhc",
-      likeCount:0,
-      viewCount:0,
-      description:`5,091 views  Mar 5, 2021  If you have been around coding for a bit, you may have heard of decorator functions. Well what are they and how do we use them? We are going to answer those questions in today's topic.
-
-      Would you like to help keep this channel going?
-      https://www.patreon.com/bePatron?u=73...
-      
-      Earn SCRIPT: https://app.tryroll.com/claim/SCRIPT-...
-      
-      Unlimited access to EVERY course for one low price:  https://allthingsjavascript.teachable...
-      
-      Access to EVERY course via subscription (get 2 months free): https://www.skillshare.com/r/profile/...
-      
-      Courses offered on Udemy at a discount (access from my site): http://allthingsjavascript.com/course...
-      
-      Tutorials referred to in this video:
-      Higher Order Functions: https://youtu.be/O9lMynNdka4
-      Spread Operator: https://youtu.be/ugw32Yprzjw
-      
-      Need Help? https://pensight.com/x/steven-hancock
-      
-      For more resources on JavaScript: 
-      http://www.allthingsjavascript.com
-      
-      #javascript #AllThingsJavaScriptLLC`,
-    },
-    channelDetail:{
-      channelName:"",
-      channelImg:"",
-      subscriberCount:0
-    }
-
-  },
+  }
 ];

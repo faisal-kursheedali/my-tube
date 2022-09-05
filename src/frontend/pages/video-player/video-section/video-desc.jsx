@@ -75,9 +75,10 @@ const VideoDesc = ({ data }) => {
                         {
                             likedVdoData.some(i=>i._id===data._id)?(
                                 <>
-                                <AiFillLike className="video-section-btn-item-icn" onClick={()=>{
+                                <AiFillLike className="video-section-btn-item-icn"/>
+                                <div className="video-section-btn-item-txt" onClick={()=>{
                                     removeLikedVdo(token,actionDispatch,data._id);
-                                }} />like
+                                }} >like</div>
                                 </>
                             ):(<>
                                 <BiLike className="video-section-btn-item-icn" /> <div className="video-section-btn-item-txt" onClick={()=>{
@@ -90,36 +91,36 @@ const VideoDesc = ({ data }) => {
                         </li>
                         <li className="video-section-btn-item">
                             <BiDislike className="video-section-btn-item-icn" onClick={()=>{
-                            removeLikedVdo(token,actionDispatch,data._id);
-                        }} /> <div className="video-section-btn-item-txt"> dislike</div>
+                                removeLikedVdo(token,actionDispatch,data._id);
+                            }} /> <div className="video-section-btn-item-txt"> dislike</div>
                         </li>
+                            <li className="video-section-btn-item" onClick={()=>{
+                                setModal(prev=>prev=!prev);
+                            }}><RiPlayListAddLine className="video-section-btn-item-icn" /> <div className="video-section-btn-item-txt"> save</div></li>
+                            {/* <li className="video-section-btn-item">
+                                <PlaylistModal/>
+                            </li> */}
                         <li className="video-section-btn-item">
                             {
                                 watchlaterData.some(i=>i._id === data._id)?(
                                     <>
-                                    <MdWatchLater className="video-section-btn-item-icn" onClick={()=>{
+                                    <MdWatchLater className="video-section-btn-item-icn" /> <div className="video-section-btn-item-txt"  onClick={()=>{
                                         console.log(" removed watchlater");
                                         removeWatchlater(token,actionDispatch,data._id);
-                                    }} /> <div className="video-section-btn-item-txt"> watch later</div>
+                                    }}> watch later</div>
                                     </>
                                 ):(
                                     <>
-                                    <MdOutlineWatchLater className="video-section-btn-item-icn" onClick={()=>{
+                                    <MdOutlineWatchLater className="video-section-btn-item-icn" /> <div className="video-section-btn-item-txt"  onClick={()=>{
                                         console.log(watchlaterData);
                                         console.log(data);
                                     addWatchlater(token,actionDispatch,data);
-                        }} /> <div className="video-section-btn-item-txt"> watch later</div>
+                        }}> watch later</div>
                                     </>
                                 )
                             }
                             
                         </li>
-                        <li className="video-section-btn-item" onClick={()=>{
-                            setModal(prev=>prev=!prev);
-                        }}><RiPlayListAddLine className="video-section-btn-item-icn" /> <div className="video-section-btn-item-txt"> save</div></li>
-                        {/* <li className="video-section-btn-item">
-                            <PlaylistModal/>
-                        </li> */}
                     </ul>
                 </div>
                 <div className="video-section-channel">
@@ -130,7 +131,7 @@ const VideoDesc = ({ data }) => {
                                 {data.channelDetail.channelName}
                             </div>
                             <div className="video-section-channel-sub-count">
-                                {/* {subCount} */}
+                                {data.channelDetail.subscriberCount}
                             </div>
                         </div>
                     </div>

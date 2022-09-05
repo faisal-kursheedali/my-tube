@@ -22,6 +22,7 @@
     padding-left: 0px;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 .video-section-btn-item{
     font-size: 1rem;
@@ -41,6 +42,7 @@
 .video-section-channel{
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     margin: 12px 12px 0px 0px;
     padding:6px;
     padding-left: 12px;
