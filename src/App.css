@@ -16,6 +16,9 @@
 .side-mainpg-container{
   overflow-y: scroll;
   width: 100%;
+  height: 100%;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 body{
   /* background-color: #f9f9f9; */
