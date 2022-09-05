@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 import { useAuth } from '../context/authContext'
 import { loginUser } from '../services/authServices'
 import { useNavigate,useLocation } from "react-router-dom";
-import { USER_EMAIL, USER_PASSWORD } from '../constant/authConstant';
+import { GUEST_LOGIN, USER_EMAIL, USER_PASSWORD } from '../constant/authConstant';
 import "./css/auth.css"
 
 const Login = () => {
@@ -35,11 +35,20 @@ const Login = () => {
       type:USER_PASSWORD,
       payload:e.target.value
     })} value={authState.password} />
+    <div className="auth-form-btn-container">
+
     <button onClick={()=>{
       
       loginUser(authState,authDispatch,navigateFnc)
       
     }} className="auth-btn">LOGIN</button>
+    <button onClick={()=>{
+      // console.log(authDispatch({type:GUEST_LOGIN,payload:""}));
+      authDispatch({
+        type:GUEST_LOGIN
+      })
+    }} className="auth-btn auth-btn-guest">guest</button>
+    </div>
     <Link to={"/signup"} className="auth-link">signup</Link> 
     </div>
     </div> 

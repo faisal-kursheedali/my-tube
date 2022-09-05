@@ -64,4 +64,7 @@
     .vdo-card-container,.vdo-link{
         width: 100%;
     }
+    .vdo-thumbnail{
+        height: 170px;
+    }
 }

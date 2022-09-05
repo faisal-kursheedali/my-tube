@@ -17,7 +17,7 @@ const SideNavMenu = () => {
   const  {darkMode,setDarkMode}=useAction();
   return (
     <div className="side-nav-menu-container">
-      <Link to={"/"} style={{textDecoration:"none",color:"initial"}}>
+      <Link to={"/"} style={{textDecoration:"none",color:"inherit"}}>
       <div className="side-nav-menu-logo">
           <BsYoutube className="side-nav-menu-logo-icn"/>
         <div className="side-nav-menu-logo-brand">MyTube</div>

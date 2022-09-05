@@ -3,7 +3,6 @@
     /* background-color: gray; */
     width: 100%;
     max-height: 90vh;
-    color: black;
 }
 
 .side-nav-menu-list{
@@ -17,7 +16,7 @@
     padding: 1rem;
     cursor: pointer;
     text-decoration: none;
-    color: initial;
+    color: inherit;
 }
 .side-nav-menu-list-item:hover{
     background-color:rgb(193, 145, 145);
@@ -35,6 +34,7 @@
 }
 .side-nav-menu-logo-icn{
     color: red;
+    font-size: 2rem;
 }
 .side-nav-menu-logo-brand{
     font-family: 'Anton', sans-serif;

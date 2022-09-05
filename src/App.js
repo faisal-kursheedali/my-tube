@@ -51,7 +51,7 @@ function App() {
       <div className="main-content" onClick={()=>setSideNav(false)}>
         {/* {console.log(darkMode)} */}
 {
-  sideNav?darkMode?(<div className="side-nav-menu" style={{backgroundColor:"gray"}} ><SideNavMenu/></div>):(<div className="side-nav-menu" style={{backgroundColor:"lightgray"}} ><SideNavMenu/></div>):""
+  sideNav?darkMode?(<div className="side-nav-menu" style={{backgroundColor:"#202020",color:"white"}} ><SideNavMenu/></div>):(<div className="side-nav-menu" style={{backgroundColor:"white",color:"black"}} ><SideNavMenu/></div>):""
 }
       
       <div className="side-nav-container">

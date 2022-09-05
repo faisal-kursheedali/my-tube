@@ -3,19 +3,22 @@ import "./header.css"
 import {Link} from "react-router-dom"
 import {BsYoutube} from "react-icons/bs"
 import {GoSearch} from "react-icons/go"
+import {AiOutlineClose} from "react-icons/ai"
 import {AiOutlineMenu} from "react-icons/ai"
 import {CgProfile} from "react-icons/cg"
 import {BsFillMoonStarsFill,BsFillSunFill} from "react-icons/bs"
 import { useAction } from '../../context/actionContext'
-import { SEARCH } from '../../constant/actionConstant'
+import { CLEAR_SEARCH, SEARCH } from '../../constant/actionConstant'
 import { useAuth } from '../../context/authContext';
 import { useNavigate } from 'react-router-dom'
+import { SideNav } from '../import'
 // import { localStorage.setItem } from '../../utility/localStorage'
 const Header = () => {
   const headerRef=useRef(null);
   const {filterState,filterDispatch,setSideNav,darkMode,setDarkMode}=useAction();
   const navigate=useNavigate();
   const {authState}=useAuth();
+  const {searchX,setSearchX}=useAction();
   const {token}=authState;
   useEffect(() => {
     if (darkMode) {
@@ -29,6 +32,13 @@ const Header = () => {
 
     }
   }, [darkMode]);
+  useEffect(()=>{
+    if (filterState.search!=="") {
+      setSearchX(true);
+    }else{
+      setSearchX(false);
+    }
+  },[filterState.search])
   
 // console.log(sideBar);
   return (
@@ -45,9 +55,19 @@ const Header = () => {
 
 
         <div className="bui-input-icn-container bui-input-sm nav-search">
-          <input type="text" className="bui-input nav-input" placeholder='search' value={filterState.search} onChange={(e)=>filterDispatch({type:SEARCH,payload:e.target.value})} />
+          <input type="text" className="bui-input nav-input" placeholder='search' value={filterState.search} onChange={(e)=>filterDispatch({type:SEARCH,payload:e.target.value})} onKeyPress={e=>{
+            if (e.charCode===13) {
+              navigate(`/search:${filterState.search}`);
+            }
+          }} />
+            {
+              searchX?<AiOutlineClose style={{backgroundColor:"initial",cursor:"pointer"}} onClick={()=>{
+                filterDispatch({type:CLEAR_SEARCH})
+                navigate("/",{replace:true})
+              }}/>:""
+            }
             <div className="input-icn ">
-              <Link to={`/search:${filterState.search}`} style={{color:"inherit"}}><GoSearch/></Link>
+              <Link to={`/search:${filterState.search}`} style={{color:"inherit",marginLeft:"4px"}}><GoSearch/></Link>
             
             </div>
         </div>

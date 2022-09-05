@@ -7,11 +7,11 @@ import {RiPlayList2Fill} from "react-icons/ri"
 import {MdWatchLater} from "react-icons/md"
 import {Link, useNavigate} from "react-router-dom"
 import { useAuth } from '../../context/authContext';
-import { LOGOUT_USER } from '../../constant/authConstant';
+// import { LOGOUT_USER } from '../../constant/authConstant';
 import { useAction } from '../../context/actionContext';
 // import { sideBar,setSideBar } from '../header/header.jsx';
 const SideNav = () => {
-    const {authState,authDispatch}=useAuth();
+    const {authState}=useAuth();
     const {darkMode}=useAction();
     const {token}=authState;
     const navigate =useNavigate();
@@ -63,9 +63,10 @@ useEffect(() => {
                 }
                 {
                   token?(<li className="side-nav-item side-nav-last-item" onClick={()=>{
-                    authDispatch({
-                        type:LOGOUT_USER
-                    })
+                    // authDispatch({
+                    //     type:LOGOUT_USER
+                    // })
+                    navigate("/user")
                 }}>
                 <RiLogoutBoxFill className="side-nav-icn"/>
                 <span className="nav-item-txt">Log out</span>

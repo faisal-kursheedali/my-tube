@@ -17,12 +17,13 @@ const ActionProvider=({children})=>{
     })
     const[actionState,actionDispatch]=useReducer(ActionReducer,actionInitialState)
     const [sideNav,setSideNav]=useState(false);
+    const [searchX,setSearchX]=useState(false);
     const mode=localStorage.getItem("darkmode");
     const [darkMode,setDarkMode]=useState(mode);
     const [modal,setModal]=useState(false);
     return(
 
-    <actionContext.Provider value={{actionState,actionDispatch,filterState,filterDispatch,sideNav,setSideNav,darkMode,setDarkMode,modal,setModal}}>
+    <actionContext.Provider value={{actionState,actionDispatch,filterState,filterDispatch,sideNav,setSideNav,darkMode,setDarkMode,modal,setModal,searchX,setSearchX}}>
         {children}
     </actionContext.Provider>
     )

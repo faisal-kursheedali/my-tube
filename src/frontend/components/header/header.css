@@ -79,7 +79,16 @@
     /* .nav-menu{
         display: block;
     } */
+}
+@media (max-width:425px) {
     .nav-logo{
-        display: none;
+        font-size: 1.5rem;
+        margin-right: 0px;
+        margin-left: 4px;
     }
+    .mytube-logo{
+        /* display: none; */
+        font-size: 1rem;
+    }
+    
 }

@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react';
 import { VideoListing } from '../components/import';
-import { CLEAR_SEARCH } from '../constant/actionConstant';
+// import { CLEAR_SEARCH } from '../constant/actionConstant';
 import { useAction } from '../context/actionContext';
 import { useData } from '../context/dataContext';
 
@@ -8,9 +8,9 @@ import { useData } from '../context/dataContext';
 const Search = () => {
     const{filterState,filterDispatch}=useAction();
     const {vdoList}=useData();
-    useEffect(()=>{
-        filterDispatch({type:CLEAR_SEARCH})
-    },[filterDispatch])
+    // useEffect(()=>{
+    //     filterDispatch({type:CLEAR_SEARCH})
+    // },[filterDispatch])
     // console.log(filterState.search);
     // const result=()=>{
 

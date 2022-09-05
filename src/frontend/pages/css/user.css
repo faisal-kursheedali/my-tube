@@ -1,5 +1,11 @@
 .user-container{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.user-info-container{
+    display: flex;
     padding: 2.5rem 4rem;
     background-color: gray;
     border-radius: .5rem;
@@ -7,8 +13,26 @@
     flex-grow: unset;
     justify-content: flex-start;
     align-items: center;
-    margin: auto;
     margin-top: 4rem;
+}
+.user-btn{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+}
+.user-explore-btn,.user-logout-btn{
+    background-color: red;
+    color: white;
+    outline: none;
+    border: none;
+    padding: .5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.user-logout-btn{
+    margin-left: .5rem;
+    color: black;
+    background-color: gray;
 }
 .user-profile{
  min-width: 90px;
