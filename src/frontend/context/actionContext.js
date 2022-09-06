@@ -19,7 +19,7 @@ const ActionProvider=({children})=>{
     const [sideNav,setSideNav]=useState(false);
     const [searchX,setSearchX]=useState(false);
     const mode=localStorage.getItem("darkmode");
-    const [darkMode,setDarkMode]=useState(mode);
+    const [darkMode,setDarkMode]=useState(mode|false);
     const [modal,setModal]=useState(false);
     return(
 

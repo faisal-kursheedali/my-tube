@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React from 'react';
 import { VideoListing } from '../components/import';
 // import { CLEAR_SEARCH } from '../constant/actionConstant';
 import { useAction } from '../context/actionContext';

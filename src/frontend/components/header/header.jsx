@@ -11,7 +11,7 @@ import { useAction } from '../../context/actionContext'
 import { CLEAR_SEARCH, SEARCH } from '../../constant/actionConstant'
 import { useAuth } from '../../context/authContext';
 import { useNavigate } from 'react-router-dom'
-import { SideNav } from '../import'
+// import { SideNav } from '../import'
 // import { localStorage.setItem } from '../../utility/localStorage'
 const Header = () => {
   const headerRef=useRef(null);
@@ -38,7 +38,7 @@ const Header = () => {
     }else{
       setSearchX(false);
     }
-  },[filterState.search])
+  },[filterState.search,setSearchX])
   
 // console.log(sideBar);
   return (
