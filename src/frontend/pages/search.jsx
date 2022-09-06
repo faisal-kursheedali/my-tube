@@ -6,7 +6,7 @@ import { useData } from '../context/dataContext';
 
 
 const Search = () => {
-    const{filterState,filterDispatch}=useAction();
+    const{filterState}=useAction();
     const {vdoList}=useData();
     // useEffect(()=>{
     //     filterDispatch({type:CLEAR_SEARCH})
