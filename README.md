@@ -26,7 +26,8 @@
   <li>Dark mode</li>
   <li>Search</li>
   <li>Dislike</li>
-  
+  <li>Remember me while login</li>
+  <li>Logout</li>
   
   
 </ul>
