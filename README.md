@@ -4,6 +4,34 @@
 <h3>MyTube</h3> 
 <div>MyTube is a fully functioning dynamic web application. It is a video library web application that is built using HTML, CSS, JavaScript, React, and React-router. It has all the basic features of a video library application.</div>
 
+<h4>Pages</h4>
+<ul>
+  <li>Home</li>
+  <li>Single video page</li>
+  <li>Like</li>
+  <li>Watch later</li>
+  <li>Playlist</li>
+  <li>User profile</li>
+  <li>Login</li>
+  <li>Signup</li>
+  <li>Page for search results</li>
+  
+</ul>
+<h4>Features</h4>
+<ul>
+  <li>Related video</li>
+  <li>Like - add and remove the videos</li>
+  <li>watch later - add and remove the videos</li>
+  <li>Playlist - create a new playlist and add a video to the playlist </li>
+  <li>Dark mode</li>
+  <li>Search</li>
+  <li>Signup</li>
+  <li>Dislike</li>
+  
+  
+  
+</ul>
+
 <h3>Demo</h3> 
 
 
