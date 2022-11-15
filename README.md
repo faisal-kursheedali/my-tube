@@ -25,7 +25,6 @@
   <li>Playlist - create a new playlist and add a video to the playlist </li>
   <li>Dark mode</li>
   <li>Search</li>
-  <li>Signup</li>
   <li>Dislike</li>
   
   
