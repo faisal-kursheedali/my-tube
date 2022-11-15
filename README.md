@@ -19,7 +19,7 @@
 </ul>
 <h4>Features</h4>
 <ul>
-  <li>Related video</li>
+  <li>Related videos</li>
   <li>Like - add and remove the videos</li>
   <li>watch later - add and remove the videos</li>
   <li>Playlist - create a new playlist and add a video to the playlist </li>
