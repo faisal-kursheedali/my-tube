@@ -39,7 +39,7 @@ const SideNavMenu = () => {
       <div className="side-nav-menu-list-item-icn">
           <AiFillLike/>
         </div>
-        <div className="side-nav-menu-list-item-name">AiFillLike</div>
+        <div className="side-nav-menu-list-item-name">Like</div>
       </Link>
       </li>
       <hr/>

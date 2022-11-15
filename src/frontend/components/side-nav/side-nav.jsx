@@ -41,7 +41,7 @@ useEffect(() => {
             <li className="side-nav-item">
                 <Link className='side-nav-link' to="/like">
             <AiTwotoneLike className="side-nav-icn"/>
-            <span className="nav-item-txt">Liked</span></Link>
+            <span className="nav-item-txt">Like</span></Link>
                 </li>
             <li className="side-nav-item">
             <Link className='side-nav-link' to="/watchlater">
